@@ -1,0 +1,5508 @@
+proxies:
+  - name: '会员群: https://t.me/emovpn_vip'
+    type: vmess
+    server: v52.nodemo.top
+    port: 3543
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v52.nodemo.top
+    servername: v52.nodemo.top
+  - name: "「\U0001F1E8\U0001F1F3」台湾-S01「专」x5"
+    type: ss
+    server: s26.nodemo.top
+    port: 1089
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EF\U0001F1F5」日本-快线「专」x5"
+    type: ss
+    server: s35.nodemo.top
+    port: 1089
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1E8\U0001F1F3」台湾-V01「专」x5"
+    type: vmess
+    server: v93.nodemo.top
+    port: 1008
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v93.nodemo.top
+    servername: v93.nodemo.top
+  - name: "「\U0001F1ED\U0001F1F0」香港-S01「超」x5"
+    type: ss
+    server: s27.nodemo.top
+    port: 2090
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1FA\U0001F1F8」美国-S28「超」x5"
+    type: ss
+    server: s28.nodemo.top
+    port: 1091
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1F8\U0001F1EC」新加坡S29「超」x5"
+    type: ss
+    server: s29.nodemo.top
+    port: 1090
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1FA\U0001F1F8」美国-S30「超」x5"
+    type: ss
+    server: s30.nodemo.top
+    port: 1090
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1F8\U0001F1EC」新加坡S31「超」x5"
+    type: ss
+    server: s31.nodemo.top
+    port: 1089
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1F2\U0001F1F4」澳门-S32「超」x5"
+    type: ss
+    server: s32.nodemo.top
+    port: 1088
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1ED\U0001F1F0」香港-S33「超」x5"
+    type: ss
+    server: s33.nodemo.top
+    port: 2089
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1FA\U0001F1F8」美国-S34「超」x5"
+    type: ss
+    server: s34.nodemo.top
+    port: 1091
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EF\U0001F1F5」日本-pop「专」x3"
+    type: vmess
+    server: v91.nodemo.top
+    port: 4433
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v91.nodemo.top
+    servername: v91.nodemo.top
+  - name: "「\U0001F1ED\U0001F1F0」香港-001「超」x2"
+    type: vmess
+    server: v77.emovpn.buzz
+    port: 443
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v77.emovpn.buzz
+    servername: v77.emovpn.buzz
+  - name: "「\U0001F1ED\U0001F1F0」香港-015「超」x2"
+    type: trojan
+    server: t29.emovpn.buzz
+    port: 443
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+    sni: t29.emovpn.buzz
+  - name: "「\U0001F1EF\U0001F1F5」日本-003「专」x3"
+    type: vmess
+    server: jp76.emovpn.buzz
+    port: 443
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: jp76.emovpn.buzz
+    servername: jp76.emovpn.buzz
+  - name: "「\U0001F1EF\U0001F1F5」日本-006「超」x2"
+    type: vmess
+    server: v85.emovpn.buzz
+    port: 2053
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v85.emovpn.buzz
+    servername: v85.emovpn.buzz
+  - name: "「\U0001F1EF\U0001F1F5」日本-009「超」x2"
+    type: trojan
+    server: t28.emovpn.buzz
+    port: 6149
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+    sni: t28.emovpn.buzz
+  - name: "「\U0001F1FA\U0001F1F8」美国-005「普」x2"
+    type: trojan
+    server: t25.emovpn.buzz
+    port: 6201
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+    sni: t25.emovpn.buzz
+  - name: "「\U0001F1EE\U0001F1F3」印度-001「普」x3"
+    type: trojan
+    server: t42.nodemo.top
+    port: 6103
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+    sni: t42.nodemo.top
+  - name: "「\U0001F1E8\U0001F1F3」台湾-001「专」x2"
+    type: vmess
+    server: tw64.emovpn.buzz
+    port: 8443
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tw64.emovpn.buzz
+    servername: tw64.emovpn.buzz
+  - name: "「\U0001F1E8\U0001F1F3」台湾-002「专」x2"
+    type: vmess
+    server: tw65.emovpn.buzz
+    port: 8443
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tw65.emovpn.buzz
+    servername: tw65.emovpn.buzz
+  - name: "「\U0001F1F8\U0001F1EC」新加坡01「超」| 解锁 x5"
+    type: vmess
+    server: v70.nodemo.top
+    port: 6260
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v70.nodemo.top
+    servername: v70.nodemo.top
+  - name: "「\U0001F1F8\U0001F1EC」新加坡02「超」| 解锁 x2"
+    type: vmess
+    server: v71.nodemo.top
+    port: 8245
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v71.nodemo.top
+    servername: v71.nodemo.top
+  - name: "「\U0001F1ED\U0001F1F0」紫府圣地「专」| \U0001F680 x3"
+    type: vmess
+    server: v28.nodemo.top
+    port: 8299
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v28.nodemo.top
+    servername: v28.nodemo.top
+  - name: "「\U0001F1ED\U0001F1F0」大衍圣地「超」| \U0001F680 x3"
+    type: vmess
+    server: v27.nodemo.top
+    port: 1562
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v27.nodemo.top
+    servername: v27.nodemo.top
+  - name: "「\U0001F1ED\U0001F1F0」天璇圣地「超」| \U0001F680 x3"
+    type: vmess
+    server: v22.nodemo.top
+    port: 2195
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v22.nodemo.top
+    servername: v22.nodemo.top
+  - name: "「\U0001F1ED\U0001F1F0」仙霞山「超」x3"
+    type: vmess
+    server: v16.nodemo.top
+    port: 1971
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v16.nodemo.top
+    servername: v16.nodemo.top
+  - name: "「\U0001F1EC\U0001F1E7」无花果 - 免流 x3"
+    type: vmess
+    server: v50.emovpn.buzz
+    port: 4964
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v50.emovpn.buzz
+    servername: v50.emovpn.buzz
+  - name: "「\U0001F1EC\U0001F1E7」猕猴桃 - 免流 x1"
+    type: vmess
+    server: v51.emovpn.buzz
+    port: 3338
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v51.emovpn.buzz
+    servername: v51.emovpn.buzz
+  - name: "「\U0001F1FA\U0001F1F8」三红柚 - 免流 x1"
+    type: vmess
+    server: v53.nodemo.top
+    port: 4060
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v53.nodemo.top
+    servername: v53.nodemo.top
+  - name: "「\U0001F1E6\U0001F1FA」妃子笑 - 免流 | NF | D+ x2"
+    type: vmess
+    server: v45.nodemo.top
+    port: 8297
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v45.nodemo.top
+    servername: v45.nodemo.top
+  - name: "「\U0001F1E6\U0001F1FA」红伽力 - 免流 | NF | D+ x2"
+    type: vmess
+    server: v46.nodemo.top
+    port: 4705
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v46.nodemo.top
+    servername: v46.nodemo.top
+  - name: "「\U0001F1FA\U0001F1F8」EMO | 天元果 x5"
+    type: vmess
+    server: v33.emoyes.top
+    port: 443
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v33.emoyes.top
+    servername: v33.emoyes.top
+  - name: "「\U0001F1EF\U0001F1F5」日本-S01「普」x5"
+    type: ss
+    server: s1.nodemo.top
+    port: 3099
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EF\U0001F1F5」日本-S02「普」x5"
+    type: ss
+    server: s2.nodemo.top
+    port: 1260
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EF\U0001F1F5」日本-S03「普」x5"
+    type: ss
+    server: s3.nodemo.top
+    port: 1270
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1FA\U0001F1F8」美国-S01「普」x5"
+    type: ss
+    server: s4.nodemo.top
+    port: 1271
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1FA\U0001F1F8」美国-S02「普」x5"
+    type: ss
+    server: s5.nodemo.top
+    port: 1299
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1F8\U0001F1EC」新加坡S01「普」x5"
+    type: ss
+    server: s6.nodemo.top
+    port: 1267
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EE\U0001F1F3」印度-S01「普」x5"
+    type: ss
+    server: s7.nodemo.top
+    port: 1296
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1FA\U0001F1F8」美国-S08「普」x3"
+    type: ss
+    server: s8.nodemo.top
+    port: 1259
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1FA\U0001F1F8」美国-S09「普」x3"
+    type: ss
+    server: s09.nodemo.top
+    port: 1292
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1FA\U0001F1F8」美国-S11「普」x3"
+    type: ss
+    server: s11.nodemo.top
+    port: 1264
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EF\U0001F1F5」日本-S12「普」x3"
+    type: ss
+    server: s12.nodemo.top
+    port: 8084
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EF\U0001F1F5」日本-S13「普」x3"
+    type: ss
+    server: s13.nodemo.top
+    port: 1255
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1F8\U0001F1EC」新加坡S14「普」x3"
+    type: ss
+    server: s14.nodemo.top
+    port: 1253
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1F8\U0001F1EC」新加坡S15「普」x3"
+    type: ss
+    server: s15.nodemo.top
+    port: 3269
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EC\U0001F1E7」英国-S16「普」x3"
+    type: ss
+    server: s16.nodemo.top
+    port: 1252
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EB\U0001F1F7」法国-S17「普」x3"
+    type: ss
+    server: s17.nodemo.top
+    port: 1274
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1E7\U0001F1F7」巴西-S18「普」x3"
+    type: ss
+    server: s18.nodemo.top
+    port: 1273
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EA\U0001F1F8」西班牙S19「普」x3"
+    type: ss
+    server: s19.nodemo.top
+    port: 1298
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EF\U0001F1F5」日本-S20「超」x3"
+    type: ss
+    server: s20.nodemo.top
+    port: 4435
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1EF\U0001F1F5」日本-S21「超」x3"
+    type: ss
+    server: s21.nodemo.top
+    port: 1283
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1F8\U0001F1EC」新加坡S22「普」x3"
+    type: ss
+    server: s22.nodemo.top
+    port: 1262
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: "「\U0001F1F8\U0001F1EC」新加坡S23「普」x3"
+    type: ss
+    server: s23.nodemo.top
+    port: 3017
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: 剩余流量：1441.93 GB
+    type: vless
+    server: 69.84.182.13
+    port: 443
+    uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /gsjc/us1
+      headers:
+        Host: us1-gs.aiopen.sbs
+    servername: us1-gs.aiopen.sbs
+  - name: 距离下次重置剩余：9 天
+    type: vless
+    server: 69.84.182.13
+    port: 443
+    uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /gsjc/us1
+      headers:
+        Host: us1-gs.aiopen.sbs
+    servername: us1-gs.aiopen.sbs
+  - name: 套餐到期：2029-10-30
+    type: vless
+    server: 69.84.182.13
+    port: 443
+    uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /gsjc/us1
+      headers:
+        Host: us1-gs.aiopen.sbs
+    servername: us1-gs.aiopen.sbs
+  - name: "\U0001F1FA\U0001F1F8美国高速"
+    type: vless
+    server: 69.84.182.13
+    port: 443
+    uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /gsjc/us1
+      headers:
+        Host: us1-gs.aiopen.sbs
+    servername: us1-gs.aiopen.sbs
+  - name: "\U0001F1FA\U0001F1F8美国高速2"
+    type: vless
+    server: 208.87.242.111
+    port: 443
+    uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Wn_r8n28FaFq6N_B8wAAF2mrJs8TgsYzwImhuuY-wy8
+      short-id: 2011bd65
+    network: tcp
+    servername: tv.apple.com
+  - name: "\U0001F1F9\U0001F1FC台湾Hinet"
+    type: vless
+    server: kbgs.hinet.tw1.yydjc.top
+    port: 443
+    uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: UtL1fZqK9sl2QQaS03BQnfYBAnH760eJ_4YzSR9RniM
+      short-id: 601a08ef
+    network: tcp
+    servername: s0.awsstatic.com
+  - name: "\U0001F1EB\U0001F1F7法国"
+    type: vless
+    server: 69.84.182.13
+    port: 443
+    uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /gsjc/fr1
+      headers:
+        Host: fr-1-fr-1.aiopen.sbs
+    servername: fr-1-fr-1.aiopen.sbs
+  - name: "\U0001F1FA\U0001F1F8美国凤凰城"
+    type: vless
+    server: 132.226.147.10
+    port: 443
+    uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: OEZ3C-1OCSYBikqcWudtPP3PpQq2RAI7rFPxWoTCDSc
+      short-id: bffe9292
+    network: tcp
+    servername: musicstatus.tv.apple.com
+  - name: "\U0001F1FA\U0001F1F8美国阿什本"
+    type: vless
+    server: 129.158.41.239
+    port: 443
+    uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Um47-P2c42os7mr1X4Hxw0290YA1FXwyG96p854qol0
+      short-id: 8c38a563b7a004d8
+    network: tcp
+    servername: musicstatus.tv.apple.com
+  - name: "\U0001F1E6\U0001F1FA悉尼高速"
+    type: vless
+    server: 192.9.164.54
+    port: 443
+    uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9oOtS_WWQMj6h4L72o1Lbu9ze_lmW_2PQy4diKpBjQI
+      short-id: ba9c05e6cce34e2e
+    network: tcp
+    servername: musicstatus.tv.apple.com
+  - name: 剩余流量：1157.65 GB
+    server: hkn.timoyun.cyou
+    port: 56000
+    udp: true
+    skip-cert-verify: false
+    sni: hkn.timoyun.cyou
+    type: hysteria2
+    password: 140dc256-49e0-4301-871b-1fb9c717174c
+    obfs: salamander
+    obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  - name: 距离下次重置剩余：26 天
+    server: hkn.timoyun.cyou
+    port: 56000
+    udp: true
+    skip-cert-verify: false
+    sni: hkn.timoyun.cyou
+    type: hysteria2
+    password: 140dc256-49e0-4301-871b-1fb9c717174c
+    obfs: salamander
+    obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  - name: 套餐到期：2026-08-17
+    server: hkn.timoyun.cyou
+    port: 56000
+    udp: true
+    skip-cert-verify: false
+    sni: hkn.timoyun.cyou
+    type: hysteria2
+    password: 140dc256-49e0-4301-871b-1fb9c717174c
+    obfs: salamander
+    obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  - name: V2T | 香港 01
+    server: hkn.timoyun.cyou
+    port: 56000
+    udp: true
+    skip-cert-verify: false
+    sni: hkn.timoyun.cyou
+    type: hysteria2
+    password: 140dc256-49e0-4301-871b-1fb9c717174c
+    obfs: salamander
+    obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  - name: V2T | 日本 01
+    server: jpd.timoyun.cyou
+    port: 56000
+    udp: true
+    skip-cert-verify: true
+    sni: jpd.timoyun.cyou
+    type: hysteria2
+    password: 140dc256-49e0-4301-871b-1fb9c717174c
+    obfs: salamander
+    obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  - name: V2T | 新加坡 01
+    server: sgx.timoyun.cyou
+    port: 56000
+    udp: true
+    skip-cert-verify: true
+    sni: sgx.timoyun.cyou
+    type: hysteria2
+    password: 140dc256-49e0-4301-871b-1fb9c717174c
+    obfs: salamander
+    obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  - name: V2T | 悉尼 01
+    server: aui.timoyun.cyou
+    port: 58000
+    udp: true
+    skip-cert-verify: true
+    sni: aui.timoyun.cyou
+    type: hysteria2
+    password: 140dc256-49e0-4301-871b-1fb9c717174c
+    obfs: salamander
+    obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  - name: V2T | 韩国 01
+    server: krn.timoyun.cyou
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: krn.timoyun.cyou
+    type: hysteria2
+    password: 140dc256-49e0-4301-871b-1fb9c717174c
+    obfs: salamander
+    obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  - name: V1T | 美国 02
+    server: ustnb.timoyun.cyou
+    port: 54444
+    udp: true
+    skip-cert-verify: false
+    sni: ustnb.timoyun.cyou
+    type: hysteria2
+    password: 140dc256-49e0-4301-871b-1fb9c717174c
+    obfs: salamander
+    obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  - name: V1T | 英国 01
+    server: ukg.timoyun.cyou
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    sni: ukg.timoyun.cyou
+    type: hysteria2
+    password: 140dc256-49e0-4301-871b-1fb9c717174c
+    obfs: salamander
+    obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  - name: 备用 | 美国
+    server: ustn.timoyun.cyou
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: ustn.timoyun.cyou
+    type: hysteria2
+    password: 140dc256-49e0-4301-871b-1fb9c717174c
+    obfs: salamander
+    obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  - name: "[Hy2][\U0001F1ED\U0001F1F0] 香港 01"
+    server: hy5.hy2yydsapi.top
+    port: 8443
+    sni: hy5.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1ED\U0001F1F0] 香港 02"
+    server: hy5.hy2yydsapi.top
+    port: 8089
+    sni: hy5.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1ED\U0001F1F0] 香港 03"
+    server: hy12.hy2yydsapi.top
+    port: 8089
+    sni: hy12.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1ED\U0001F1F0] 香港 06"
+    server: hy13.hy2yydsapi.top
+    port: 8089
+    sni: hy13.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1F2\U0001F1F4] 澳门 01"
+    server: hy9.hy2yydsapi.top
+    port: 8089
+    sni: hy9.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1E8\U0001F1F3] 台湾 01"
+    server: hy6.hy2yydsapi.top
+    port: 8089
+    sni: hy6.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1FA\U0001F1F8] 美国 01"
+    server: hy1.hy2yydsapi.top
+    port: 8443
+    sni: hy1.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1FA\U0001F1F8] 美国 05"
+    server: hy10.hy2yydsapi.top
+    port: 8443
+    sni: hy10.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1EF\U0001F1F5] 日本 01"
+    server: hy11.hy2yydsapi.top
+    port: 8443
+    sni: hy11.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1E6\U0001F1FA] 悉尼 01"
+    server: hy3.hy2yydsapi.top
+    port: 8443
+    sni: hy3.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1EC\U0001F1E7] 英国 01"
+    server: hy7.hy2yydsapi.top
+    port: 8443
+    sni: hy7.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1EC\U0001F1E7] 英国 02"
+    server: hy7.hy2yydsapi.top
+    port: 680
+    sni: hy7.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1F8\U0001F1EC] 新加坡 01"
+    server: hy2.hy2yydsapi.top
+    port: 8443
+    sni: hy2.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[Hy2][\U0001F1EA\U0001F1F8] 西班牙 01"
+    server: hy8.hy2yydsapi.top
+    port: 8443
+    sni: hy8.hy2yydsapi.top
+    up: 50
+    down: 100
+    skip-cert-verify: false
+    type: hysteria2
+    password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  - name: "[vless][\U0001F1ED\U0001F1F0] 香港 04"
+    type: vless
+    server: hy12.hy2yydsapi.top
+    port: 3080
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    tls: true
+    reality-opts:
+      public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+      short-id: 607e67b1
+    client-fingerprint: qq
+    network: tcp
+    servername: www.python.org
+  - name: "[vless][\U0001F1ED\U0001F1F0] 香港 07"
+    type: vless
+    server: hy13.hy2yydsapi.top
+    port: 3080
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    tls: true
+    reality-opts:
+      public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+      short-id: 607e67b1
+    client-fingerprint: edge
+    network: tcp
+    servername: www.python.org
+  - name: "[vless][\U0001F1F2\U0001F1F4] 澳门 02"
+    type: vless
+    server: hy9.hy2yydsapi.top
+    port: 8080
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    tls: true
+    reality-opts:
+      public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+      short-id: 607e67b1
+    client-fingerprint: ios
+    network: tcp
+    servername: www.python.org
+  - name: "[vless][\U0001F1E8\U0001F1F3] 台湾 02"
+    type: vless
+    server: hy6.hy2yydsapi.top
+    port: 8080
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    tls: true
+    reality-opts:
+      public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+      short-id: 607e67b1
+    client-fingerprint: firefox
+    network: tcp
+    servername: www.python.org
+  - name: "[vless][\U0001F1FA\U0001F1F8] 美国 02"
+    type: vless
+    server: hy1.hy2yydsapi.top
+    port: 8080
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    tls: true
+    reality-opts:
+      public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+      short-id: 607e67b1
+    client-fingerprint: edge
+    network: tcp
+    servername: www.python.org
+  - name: "[vless][\U0001F1FA\U0001F1F8] 美国 06"
+    type: vless
+    server: hy10.hy2yydsapi.top
+    port: 8080
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    tls: true
+    reality-opts:
+      public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+      short-id: 607e67b1
+    client-fingerprint: safari
+    network: tcp
+    servername: www.python.org
+  - name: "[vless][\U0001F1EF\U0001F1F5] 日本 02"
+    type: vless
+    server: hy11.hy2yydsapi.top
+    port: 8080
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    tls: true
+    reality-opts:
+      public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+      short-id: 607e67b1
+    client-fingerprint: safari
+    network: tcp
+    servername: www.python.org
+  - name: "[vless][\U0001F1E6\U0001F1FA] 悉尼 02"
+    type: vless
+    server: hy3.hy2yydsapi.top
+    port: 8080
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    tls: true
+    reality-opts:
+      public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+      short-id: 607e67b1
+    client-fingerprint: firefox
+    network: tcp
+    servername: www.python.org
+  - name: "[vless][\U0001F1F8\U0001F1EC] 新加坡 02"
+    type: vless
+    server: hy2.hy2yydsapi.top
+    port: 8080
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    tls: true
+    reality-opts:
+      public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+      short-id: 607e67b1
+    client-fingerprint: safari
+    network: tcp
+    servername: www.python.org
+  - name: "[vmess][\U0001F1ED\U0001F1F0] 香港 05"
+    type: vmess
+    server: hy12.hy2yydsapi.top
+    port: 6121
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hy12.hy2yydsapi.top
+  - name: "[vmess][\U0001F1ED\U0001F1F0] 香港 08"
+    type: vmess
+    server: hy13.hy2yydsapi.top
+    port: 6110
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hy13.hy2yydsapi.top
+  - name: "[vmess][\U0001F1F2\U0001F1F4] 澳门 03"
+    type: vmess
+    server: hy9.hy2yydsapi.top
+    port: 8118
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hy9.hy2yydsapi.top
+  - name: "[vmess][\U0001F1E8\U0001F1F3] 台湾 03"
+    type: vmess
+    server: hy6.hy2yydsapi.top
+    port: 8115
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hy6.hy2yydsapi.top
+  - name: "[vmess][\U0001F1FA\U0001F1F8] 美国 03"
+    type: vmess
+    server: hy1.hy2yydsapi.top
+    port: 8099
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hy1.hy2yydsapi.top
+  - name: "[vmess][\U0001F1FA\U0001F1F8] 美国 07"
+    type: vmess
+    server: hy10.hy2yydsapi.top
+    port: 8106
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hy10.hy2yydsapi.top
+  - name: "[vmess][\U0001F1EF\U0001F1F5] 日本 03"
+    type: vmess
+    server: hy11.hy2yydsapi.top
+    port: 8112
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hy11.hy2yydsapi.top
+  - name: "[vmess][\U0001F1E6\U0001F1FA] 悉尼 03"
+    type: vmess
+    server: hy3.hy2yydsapi.top
+    port: 8105
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hy3.hy2yydsapi.top
+  - name: "[vmess][\U0001F1EC\U0001F1E7] 英国 03"
+    type: vmess
+    server: hy7.hy2yydsapi.top
+    port: 5105
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hy7.hy2yydsapi.top
+  - name: "[vmess][\U0001F1F8\U0001F1EC] 新加坡 03"
+    type: vmess
+    server: hy2.hy2yydsapi.top
+    port: 8115
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hy2.hy2yydsapi.top
+  - name: "[vmess][\U0001F1EA\U0001F1F8] 西班牙 03"
+    type: vmess
+    server: hy8.hy2yydsapi.top
+    port: 8098
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hy8.hy2yydsapi.top
+  - type: hysteria2
+    name: '[17] 剩余流量：913.73 GB'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: hysteria2
+    name: '[17] 距离下次重置剩余：26 天'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: hysteria2
+    name: '[17] 套餐到期：2027-02-17'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: hysteria2
+    name: '[17] 洛杉矶CMIN2-hy2|1x'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: anytls
+    name: '[17] 洛杉矶CMIN2-AnyTLS|1x'
+    server: 128.241.227.213
+    port: 3120
+    sni: bing.com
+    skip-cert-verify: true
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  - type: hysteria2
+    name: '[17] 香港hy2测试2|0.5x'
+    server: '2400:8a20:112:1::64d'
+    port: 34444
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - name: '[17] 香港DMIT1|2x'
+    type: vmess
+    server: '2403:18c0:3:6d7::'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港DMIT2|2x'
+    type: vmess
+    server: '2403:18c0:3:10a::1'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - type: ss
+    server: v6uss1.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    name: '[17] 美西S1|1x'
+  - type: ss
+    server: v6hks1.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    name: '[17] 香港S1|1x'
+  - type: ss
+    server: v6hks5.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    name: '[17] 香港S5|1x'
+  - type: ss
+    server: v6jps2.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    name: '[17] 日本S2|1x'
+  - type: ss
+    server: v6sgs1.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    name: '[17] 新加坡S1|1x'
+  - type: ss
+    server: v6sgs2.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    name: '[17] 新加坡S2|1x'
+  - type: ss
+    server: v6uss2.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    name: '[17] 美西S2|1x'
+  - name: '[17] 日本1|1x'
+    type: vmess
+    server: '2a12:f8c1:50:8::513'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 日本2|1x'
+    type: vmess
+    server: '2404:c140:2000:3::3:ccc'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 日本3|1x'
+    type: vmess
+    server: '2a12:bec0:167:1178::'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 日本6|1xw'
+    type: vmess
+    server: '2a12:a300:3400::8f6a:163'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 日本7|1xw'
+    type: vmess
+    server: '2a12:a300:500::2925:1fc2'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 日本8|1xw'
+    type: vmess
+    server: '2a12:a300:500::8289:5957'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西1|1x'
+    type: vmess
+    server: '2607:f130:0:ee:ff:ff:13b4:61b5'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西2|1x'
+    type: vmess
+    server: '2607:f130:0:ee:ff:ff:18b6:98fe'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西3|1x'
+    type: vmess
+    server: '2605:8340::b:0:ca:0:a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西4|1x'
+    type: vmess
+    server: '2602:f947:0:1b::842d'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西5|1x'
+    type: vmess
+    server: '2605:8340::b:0:c2:0:a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西6|1x'
+    type: vmess
+    server: '2605:6400:5245::1'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西7|1x'
+    type: vmess
+    server: '2607:f130:0:f3:ff:ff:184b:9520'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西8|1x'
+    type: vmess
+    server: '2602:fa4f:900:2d88:4d53:b6e3:502e:383c'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西9|1x'
+    type: vmess
+    server: '2602:fa4f:900:1491:486e:8067:6be1:2ccf'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西10|1x'
+    type: vmess
+    server: '2607:f130:0:f3:ff:ff:2ce9:86f5'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西11|1x'
+    type: vmess
+    server: '2605:52c0:1001:5ce::'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西13|1x'
+    type: vmess
+    server: '2607:f130:0:144::4a8b:fab5'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 美西14|1x'
+    type: vmess
+    server: '2604:6600:0:11::34'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 台湾1|1x'
+    type: vmess
+    server: '2001:b030:a42d:5d01::1043'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 台湾2|1x'
+    type: vmess
+    server: '2400:70e0:b000:0:8ac:4fff:fe14:7e0'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 台湾3|1x'
+    type: vmess
+    server: '2406:8dc0:6001::12c5'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 台湾4|1x'
+    type: vmess
+    server: '2406:8dc0:600a::13'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 台湾5|1xn'
+    type: vmess
+    server: '2406:8dc0:6004:8bbb:5c76:6773:58d8:6205'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 台湾Hinet1|1x'
+    type: vmess
+    server: tvhinet.lajichang.xyz
+    port: 2052
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /7e60be4f/
+      headers:
+        Host: tvhinet.lajichang.xyz
+    client-fingerprint: chrome
+  - name: '[17] 香港HKT1|1x'
+    type: vmess
+    server: hkt.lajichang.xyz
+    port: 2052
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /7e60be4f/
+      headers:
+        Host: hkt.lajichang.xyz
+    client-fingerprint: chrome
+  - name: '[17] 香港1|1x|移动'
+    type: vmess
+    server: '2400:c620:2e:551f::1'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港2|1x'
+    type: vmess
+    server: '2401:b60:5:9c::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港3|1x'
+    type: vmess
+    server: '2a0f:7803:fb31:a4::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港4|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:4dec:d700:b23c:f701:2c4d'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港5|1x|移动'
+    type: vmess
+    server: '2400:c620:28:28bc::1'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港6|1x'
+    type: vmess
+    server: '2602:fa4f:200:40aa:133b:47a2:a3ce:7fe4'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港7|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:8e0f:109b:83c8:c9e1:deda'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港8|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:177e:d9f4:2288:e161:5b42'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港9|1x'
+    type: vmess
+    server: '2602:fa4f:202:5cf7:f37b:4ab4:59b2:d997'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港11|1x'
+    type: vmess
+    server: '2400:8a20:112:1::687'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港12|1x'
+    type: vmess
+    server: '2400:8a20:112:1::688'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港13|1x'
+    type: vmess
+    server: '2400:8a20:112:1::68e'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /7e60be4f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港14|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:8a43:265:a68a:3cec:108b'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港15|1xn'
+    type: vmess
+    server: '2a0c:9a40:9201:43d3::1'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港16|1x'
+    type: vmess
+    server: '2a12:3fc2:ab41:69ff:c43a:1345:0:1'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港17|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:656:be38:23be:bc61:6c3f'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港18|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:6045:1249:ebc6:219d:61fe'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港19|1x|移动'
+    type: vmess
+    server: '2400:c620:28:abb3::1'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港20|1x|移动'
+    type: vmess
+    server: '2400:c620:28:a087::1'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港21|1x|移动'
+    type: vmess
+    server: '2a0f:7803:fb40:23::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港22|1x|移动'
+    type: vmess
+    server: '2400:c620:29:13::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港23|1x|移动'
+    type: vmess
+    server: '2400:c620:29:7c::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港24|1x|移动'
+    type: vmess
+    server: '2400:c620:2b:48::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 香港25|1x|移动'
+    type: vmess
+    server: '2400:c620:2b:d9::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 新加坡1|1x'
+    type: vmess
+    server: '2a0e:97c0:7d4:ff05::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 新加坡2|1x'
+    type: vmess
+    server: '2a0e:97c0:7d4:ff3c::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 新加坡3|1x'
+    type: vmess
+    server: '2a02:6ea0:d14a::cdf0:54bf'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 新加坡4|2x'
+    type: vmess
+    server: '2407:cdc0:d002::184f'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 新加坡8|1x'
+    type: vmess
+    server: '2605:e440:16::281'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 新加坡9|1x'
+    type: vmess
+    server: '2605:e440:16::346'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 韩国1|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:ca30:a4cf:af3a:d423'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 韩国2|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:1a52:82c9:e0fb:ee1d'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 韩国3|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:aaa9:2a92:768c:55a2'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 韩国4|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:bbba:dec7:f562:3ead'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 澳洲1|1x'
+    type: vmess
+    server: '2a11:3:101::10ad'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 德国2|1x'
+    type: vmess
+    server: '2602:f92a:300:3a::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 德国3|1x'
+    type: vmess
+    server: '2a01:4f8:242:1d0e::1461:40'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 荷兰1|1x'
+    type: vmess
+    server: '2a07:d884::10ad'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 荷兰2|1x'
+    type: vmess
+    server: '2a12:9080:1:4c::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 英国2|1x'
+    type: vmess
+    server: '2a01:a500:1087:1:31::1'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 英国3|1x'
+    type: vmess
+    server: '2a0c:9a40:9211:1:ec07:6ff:fe0f:27b9'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 英国4|1x'
+    type: vmess
+    server: '2a12:bec0:390:10::a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 俄罗斯1|1x'
+    type: vmess
+    server: '2a00:b700::6:288'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 阿根廷1|1x'
+    type: vmess
+    server: '2a01:4f8:162:54d9:16f::'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 尼日利亚1|1x'
+    type: vmess
+    server: '2a01:4f8:162:54d9:16a::'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 法国1|1x'
+    type: vmess
+    server: '2a01:7a7:2:3343::2b93:6841'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 埃及1|1x'
+    type: vmess
+    server: '2a01:4f8:162:54d9:6f::'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 巴基斯坦1|1x'
+    type: vmess
+    server: '2001:df2:d40:9:4075::'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 意大利1|1x'
+    type: vmess
+    server: '2a05:4140:3::389f'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 越南1|1x'
+    type: vmess
+    server: '2400:6ea0:0:1351::4c89'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 澳洲2|1x'
+    type: vmess
+    server: '2406:3400:388:300::21'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 澳洲3|1x'
+    type: vmess
+    server: '2406:3400:388:300::f1'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 澳洲4|1x'
+    type: vmess
+    server: '2406:3400:388:300::3a'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[17] 伯力|联通|1x'
+    type: vmess
+    server: '2a11:27c0:195::7c8'
+    port: 24444
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - type: hysteria2
+    name: '[24] 剩余流量：0'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: hysteria2
+    name: '[24] 距离下次重置剩余：3 天'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: hysteria2
+    name: '[24] 套餐到期：2026-10-24'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: hysteria2
+    name: '[24] 洛杉矶CMIN2-hy2|1x'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: anytls
+    name: '[24] 洛杉矶CMIN2-AnyTLS|1x'
+    server: 128.241.227.213
+    port: 3120
+    sni: bing.com
+    skip-cert-verify: true
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+  - type: hysteria2
+    name: '[24] 香港hy2测试2|0.5x'
+    server: '2400:8a20:112:1::64d'
+    port: 34444
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - name: '[24] 香港DMIT1|2x'
+    type: vmess
+    server: '2403:18c0:3:6d7::'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港DMIT2|2x'
+    type: vmess
+    server: '2403:18c0:3:10a::1'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - type: ss
+    server: v6uss1.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    name: '[24] 美西S1|1x'
+  - type: ss
+    server: v6hks1.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    name: '[24] 香港S1|1x'
+  - type: ss
+    server: v6hks5.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    name: '[24] 香港S5|1x'
+  - type: ss
+    server: v6jps2.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    name: '[24] 日本S2|1x'
+  - type: ss
+    server: v6sgs1.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    name: '[24] 新加坡S1|1x'
+  - type: ss
+    server: v6sgs2.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    name: '[24] 新加坡S2|1x'
+  - type: ss
+    server: v6uss2.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: b0535a56-140e-463f-8462-4511e42c23ce
+    name: '[24] 美西S2|1x'
+  - name: '[24] 日本1|1x'
+    type: vmess
+    server: '2a12:f8c1:50:8::513'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 日本2|1x'
+    type: vmess
+    server: '2404:c140:2000:3::3:ccc'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 日本3|1x'
+    type: vmess
+    server: '2a12:bec0:167:1178::'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 日本6|1xw'
+    type: vmess
+    server: '2a12:a300:3400::8f6a:163'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 日本7|1xw'
+    type: vmess
+    server: '2a12:a300:500::2925:1fc2'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 日本8|1xw'
+    type: vmess
+    server: '2a12:a300:500::8289:5957'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西1|1x'
+    type: vmess
+    server: '2607:f130:0:ee:ff:ff:13b4:61b5'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西2|1x'
+    type: vmess
+    server: '2607:f130:0:ee:ff:ff:18b6:98fe'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西3|1x'
+    type: vmess
+    server: '2605:8340::b:0:ca:0:a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西4|1x'
+    type: vmess
+    server: '2602:f947:0:1b::842d'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西5|1x'
+    type: vmess
+    server: '2605:8340::b:0:c2:0:a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西6|1x'
+    type: vmess
+    server: '2605:6400:5245::1'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西7|1x'
+    type: vmess
+    server: '2607:f130:0:f3:ff:ff:184b:9520'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西8|1x'
+    type: vmess
+    server: '2602:fa4f:900:2d88:4d53:b6e3:502e:383c'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西9|1x'
+    type: vmess
+    server: '2602:fa4f:900:1491:486e:8067:6be1:2ccf'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西10|1x'
+    type: vmess
+    server: '2607:f130:0:f3:ff:ff:2ce9:86f5'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西11|1x'
+    type: vmess
+    server: '2605:52c0:1001:5ce::'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西13|1x'
+    type: vmess
+    server: '2607:f130:0:144::4a8b:fab5'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 美西14|1x'
+    type: vmess
+    server: '2604:6600:0:11::34'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 台湾1|1x'
+    type: vmess
+    server: '2001:b030:a42d:5d01::1043'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 台湾2|1x'
+    type: vmess
+    server: '2400:70e0:b000:0:8ac:4fff:fe14:7e0'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 台湾3|1x'
+    type: vmess
+    server: '2406:8dc0:6001::12c5'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 台湾4|1x'
+    type: vmess
+    server: '2406:8dc0:600a::13'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 台湾5|1xn'
+    type: vmess
+    server: '2406:8dc0:6004:8bbb:5c76:6773:58d8:6205'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 台湾Hinet1|1x'
+    type: vmess
+    server: tvhinet.lajichang.xyz
+    port: 2052
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /7e60be4f/
+      headers:
+        Host: tvhinet.lajichang.xyz
+    client-fingerprint: chrome
+  - name: '[24] 香港HKT1|1x'
+    type: vmess
+    server: hkt.lajichang.xyz
+    port: 2052
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /7e60be4f/
+      headers:
+        Host: hkt.lajichang.xyz
+    client-fingerprint: chrome
+  - name: '[24] 香港1|1x|移动'
+    type: vmess
+    server: '2400:c620:2e:551f::1'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港2|1x'
+    type: vmess
+    server: '2401:b60:5:9c::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港3|1x'
+    type: vmess
+    server: '2a0f:7803:fb31:a4::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港4|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:4dec:d700:b23c:f701:2c4d'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港5|1x|移动'
+    type: vmess
+    server: '2400:c620:28:28bc::1'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港6|1x'
+    type: vmess
+    server: '2602:fa4f:200:40aa:133b:47a2:a3ce:7fe4'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港7|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:8e0f:109b:83c8:c9e1:deda'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港8|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:177e:d9f4:2288:e161:5b42'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港9|1x'
+    type: vmess
+    server: '2602:fa4f:202:5cf7:f37b:4ab4:59b2:d997'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港11|1x'
+    type: vmess
+    server: '2400:8a20:112:1::687'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港12|1x'
+    type: vmess
+    server: '2400:8a20:112:1::688'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港13|1x'
+    type: vmess
+    server: '2400:8a20:112:1::68e'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /7e60be4f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港14|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:8a43:265:a68a:3cec:108b'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港15|1xn'
+    type: vmess
+    server: '2a0c:9a40:9201:43d3::1'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港16|1x'
+    type: vmess
+    server: '2a12:3fc2:ab41:69ff:c43a:1345:0:1'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港17|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:656:be38:23be:bc61:6c3f'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港18|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:6045:1249:ebc6:219d:61fe'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港19|1x|移动'
+    type: vmess
+    server: '2400:c620:28:abb3::1'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港20|1x|移动'
+    type: vmess
+    server: '2400:c620:28:a087::1'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港21|1x|移动'
+    type: vmess
+    server: '2a0f:7803:fb40:23::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港22|1x|移动'
+    type: vmess
+    server: '2400:c620:29:13::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港23|1x|移动'
+    type: vmess
+    server: '2400:c620:29:7c::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港24|1x|移动'
+    type: vmess
+    server: '2400:c620:2b:48::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 香港25|1x|移动'
+    type: vmess
+    server: '2400:c620:2b:d9::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 新加坡1|1x'
+    type: vmess
+    server: '2a0e:97c0:7d4:ff05::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 新加坡2|1x'
+    type: vmess
+    server: '2a0e:97c0:7d4:ff3c::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 新加坡3|1x'
+    type: vmess
+    server: '2a02:6ea0:d14a::cdf0:54bf'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 新加坡4|2x'
+    type: vmess
+    server: '2407:cdc0:d002::184f'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 新加坡8|1x'
+    type: vmess
+    server: '2605:e440:16::281'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 新加坡9|1x'
+    type: vmess
+    server: '2605:e440:16::346'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 韩国1|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:ca30:a4cf:af3a:d423'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 韩国2|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:1a52:82c9:e0fb:ee1d'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 韩国3|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:aaa9:2a92:768c:55a2'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 韩国4|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:bbba:dec7:f562:3ead'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 澳洲1|1x'
+    type: vmess
+    server: '2a11:3:101::10ad'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 德国2|1x'
+    type: vmess
+    server: '2602:f92a:300:3a::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 德国3|1x'
+    type: vmess
+    server: '2a01:4f8:242:1d0e::1461:40'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 荷兰1|1x'
+    type: vmess
+    server: '2a07:d884::10ad'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 荷兰2|1x'
+    type: vmess
+    server: '2a12:9080:1:4c::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 英国2|1x'
+    type: vmess
+    server: '2a01:a500:1087:1:31::1'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 英国3|1x'
+    type: vmess
+    server: '2a0c:9a40:9211:1:ec07:6ff:fe0f:27b9'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 英国4|1x'
+    type: vmess
+    server: '2a12:bec0:390:10::a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 俄罗斯1|1x'
+    type: vmess
+    server: '2a00:b700::6:288'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 阿根廷1|1x'
+    type: vmess
+    server: '2a01:4f8:162:54d9:16f::'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 尼日利亚1|1x'
+    type: vmess
+    server: '2a01:4f8:162:54d9:16a::'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 法国1|1x'
+    type: vmess
+    server: '2a01:7a7:2:3343::2b93:6841'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 埃及1|1x'
+    type: vmess
+    server: '2a01:4f8:162:54d9:6f::'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 巴基斯坦1|1x'
+    type: vmess
+    server: '2001:df2:d40:9:4075::'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 意大利1|1x'
+    type: vmess
+    server: '2a05:4140:3::389f'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 越南1|1x'
+    type: vmess
+    server: '2400:6ea0:0:1351::4c89'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 澳洲2|1x'
+    type: vmess
+    server: '2406:3400:388:300::21'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 澳洲3|1x'
+    type: vmess
+    server: '2406:3400:388:300::f1'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 澳洲4|1x'
+    type: vmess
+    server: '2406:3400:388:300::3a'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[24] 伯力|联通|1x'
+    type: vmess
+    server: '2a11:27c0:195::7c8'
+    port: 24444
+    cipher: auto
+    uuid: b0535a56-140e-463f-8462-4511e42c23ce
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - type: hysteria2
+    name: '[06] 剩余流量：0'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: hysteria2
+    name: '[06] 距离下次重置剩余：15 天'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: hysteria2
+    name: '[06] 套餐到期：2026-09-06'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: hysteria2
+    name: '[06] 洛杉矶CMIN2-hy2|1x'
+    server: 128.241.227.213
+    port: 40000
+    ports: 40000-49999
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - type: anytls
+    name: '[06] 洛杉矶CMIN2-AnyTLS|1x'
+    server: 128.241.227.213
+    port: 3120
+    sni: bing.com
+    skip-cert-verify: true
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+  - type: hysteria2
+    name: '[06] 香港hy2测试2|0.5x'
+    server: '2400:8a20:112:1::64d'
+    port: 34444
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    sni: bing.com
+    skip-cert-verify: true
+    tfo: false
+  - name: '[06] 香港DMIT1|2x'
+    type: vmess
+    server: '2403:18c0:3:6d7::'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港DMIT2|2x'
+    type: vmess
+    server: '2403:18c0:3:10a::1'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - type: ss
+    server: v6uss1.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    name: '[06] 美西S1|1x'
+  - type: ss
+    server: v6hks1.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    name: '[06] 香港S1|1x'
+  - type: ss
+    server: v6hks5.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    name: '[06] 香港S5|1x'
+  - type: ss
+    server: v6jps2.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    name: '[06] 日本S2|1x'
+  - type: ss
+    server: v6sgs1.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    name: '[06] 新加坡S1|1x'
+  - type: ss
+    server: v6sgs2.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    name: '[06] 新加坡S2|1x'
+  - type: ss
+    server: v6uss2.lajichang.xyz
+    port: 25555
+    cipher: aes-128-gcm
+    password: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    name: '[06] 美西S2|1x'
+  - name: '[06] 日本1|1x'
+    type: vmess
+    server: '2a12:f8c1:50:8::513'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 日本2|1x'
+    type: vmess
+    server: '2404:c140:2000:3::3:ccc'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 日本3|1x'
+    type: vmess
+    server: '2a12:bec0:167:1178::'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 日本6|1xw'
+    type: vmess
+    server: '2a12:a300:3400::8f6a:163'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 日本7|1xw'
+    type: vmess
+    server: '2a12:a300:500::2925:1fc2'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 日本8|1xw'
+    type: vmess
+    server: '2a12:a300:500::8289:5957'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西1|1x'
+    type: vmess
+    server: '2607:f130:0:ee:ff:ff:13b4:61b5'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西2|1x'
+    type: vmess
+    server: '2607:f130:0:ee:ff:ff:18b6:98fe'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西3|1x'
+    type: vmess
+    server: '2605:8340::b:0:ca:0:a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西4|1x'
+    type: vmess
+    server: '2602:f947:0:1b::842d'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西5|1x'
+    type: vmess
+    server: '2605:8340::b:0:c2:0:a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西6|1x'
+    type: vmess
+    server: '2605:6400:5245::1'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西7|1x'
+    type: vmess
+    server: '2607:f130:0:f3:ff:ff:184b:9520'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西8|1x'
+    type: vmess
+    server: '2602:fa4f:900:2d88:4d53:b6e3:502e:383c'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西9|1x'
+    type: vmess
+    server: '2602:fa4f:900:1491:486e:8067:6be1:2ccf'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西10|1x'
+    type: vmess
+    server: '2607:f130:0:f3:ff:ff:2ce9:86f5'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西11|1x'
+    type: vmess
+    server: '2605:52c0:1001:5ce::'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西13|1x'
+    type: vmess
+    server: '2607:f130:0:144::4a8b:fab5'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 美西14|1x'
+    type: vmess
+    server: '2604:6600:0:11::34'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 台湾1|1x'
+    type: vmess
+    server: '2001:b030:a42d:5d01::1043'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 台湾2|1x'
+    type: vmess
+    server: '2400:70e0:b000:0:8ac:4fff:fe14:7e0'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 台湾3|1x'
+    type: vmess
+    server: '2406:8dc0:6001::12c5'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 台湾4|1x'
+    type: vmess
+    server: '2406:8dc0:600a::13'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 台湾5|1xn'
+    type: vmess
+    server: '2406:8dc0:6004:8bbb:5c76:6773:58d8:6205'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 台湾Hinet1|1x'
+    type: vmess
+    server: tvhinet.lajichang.xyz
+    port: 2052
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /7e60be4f/
+      headers:
+        Host: tvhinet.lajichang.xyz
+    client-fingerprint: chrome
+  - name: '[06] 香港HKT1|1x'
+    type: vmess
+    server: hkt.lajichang.xyz
+    port: 2052
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /7e60be4f/
+      headers:
+        Host: hkt.lajichang.xyz
+    client-fingerprint: chrome
+  - name: '[06] 香港1|1x|移动'
+    type: vmess
+    server: '2400:c620:2e:551f::1'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港2|1x'
+    type: vmess
+    server: '2401:b60:5:9c::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港3|1x'
+    type: vmess
+    server: '2a0f:7803:fb31:a4::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港4|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:4dec:d700:b23c:f701:2c4d'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港5|1x|移动'
+    type: vmess
+    server: '2400:c620:28:28bc::1'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港6|1x'
+    type: vmess
+    server: '2602:fa4f:200:40aa:133b:47a2:a3ce:7fe4'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港7|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:8e0f:109b:83c8:c9e1:deda'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港8|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:177e:d9f4:2288:e161:5b42'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港9|1x'
+    type: vmess
+    server: '2602:fa4f:202:5cf7:f37b:4ab4:59b2:d997'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港11|1x'
+    type: vmess
+    server: '2400:8a20:112:1::687'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港12|1x'
+    type: vmess
+    server: '2400:8a20:112:1::688'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港13|1x'
+    type: vmess
+    server: '2400:8a20:112:1::68e'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /7e60be4f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港14|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:8a43:265:a68a:3cec:108b'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港15|1xn'
+    type: vmess
+    server: '2a0c:9a40:9201:43d3::1'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港16|1x'
+    type: vmess
+    server: '2a12:3fc2:ab41:69ff:c43a:1345:0:1'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港17|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:656:be38:23be:bc61:6c3f'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港18|1x|移动'
+    type: vmess
+    server: '2400:e3e0:f5a9:6045:1249:ebc6:219d:61fe'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港19|1x|移动'
+    type: vmess
+    server: '2400:c620:28:abb3::1'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港20|1x|移动'
+    type: vmess
+    server: '2400:c620:28:a087::1'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港21|1x|移动'
+    type: vmess
+    server: '2a0f:7803:fb40:23::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港22|1x|移动'
+    type: vmess
+    server: '2400:c620:29:13::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港23|1x|移动'
+    type: vmess
+    server: '2400:c620:29:7c::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港24|1x|移动'
+    type: vmess
+    server: '2400:c620:2b:48::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 香港25|1x|移动'
+    type: vmess
+    server: '2400:c620:2b:d9::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 新加坡1|1x'
+    type: vmess
+    server: '2a0e:97c0:7d4:ff05::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 新加坡2|1x'
+    type: vmess
+    server: '2a0e:97c0:7d4:ff3c::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 新加坡3|1x'
+    type: vmess
+    server: '2a02:6ea0:d14a::cdf0:54bf'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 新加坡4|2x'
+    type: vmess
+    server: '2407:cdc0:d002::184f'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 新加坡8|1x'
+    type: vmess
+    server: '2605:e440:16::281'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 新加坡9|1x'
+    type: vmess
+    server: '2605:e440:16::346'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 韩国1|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:ca30:a4cf:af3a:d423'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 韩国2|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:1a52:82c9:e0fb:ee1d'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 韩国3|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:aaa9:2a92:768c:55a2'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 韩国4|1x'
+    type: vmess
+    server: '2603:c024:b:ed11:bbba:dec7:f562:3ead'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 澳洲1|1x'
+    type: vmess
+    server: '2a11:3:101::10ad'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 德国2|1x'
+    type: vmess
+    server: '2602:f92a:300:3a::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 德国3|1x'
+    type: vmess
+    server: '2a01:4f8:242:1d0e::1461:40'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 荷兰1|1x'
+    type: vmess
+    server: '2a07:d884::10ad'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 荷兰2|1x'
+    type: vmess
+    server: '2a12:9080:1:4c::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 英国2|1x'
+    type: vmess
+    server: '2a01:a500:1087:1:31::1'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 英国3|1x'
+    type: vmess
+    server: '2a0c:9a40:9211:1:ec07:6ff:fe0f:27b9'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 英国4|1x'
+    type: vmess
+    server: '2a12:bec0:390:10::a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 俄罗斯1|1x'
+    type: vmess
+    server: '2a00:b700::6:288'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 阿根廷1|1x'
+    type: vmess
+    server: '2a01:4f8:162:54d9:16f::'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 尼日利亚1|1x'
+    type: vmess
+    server: '2a01:4f8:162:54d9:16a::'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 法国1|1x'
+    type: vmess
+    server: '2a01:7a7:2:3343::2b93:6841'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 埃及1|1x'
+    type: vmess
+    server: '2a01:4f8:162:54d9:6f::'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 巴基斯坦1|1x'
+    type: vmess
+    server: '2001:df2:d40:9:4075::'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 意大利1|1x'
+    type: vmess
+    server: '2a05:4140:3::389f'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 越南1|1x'
+    type: vmess
+    server: '2400:6ea0:0:1351::4c89'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 澳洲2|1x'
+    type: vmess
+    server: '2406:3400:388:300::21'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 澳洲3|1x'
+    type: vmess
+    server: '2406:3400:388:300::f1'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 澳洲4|1x'
+    type: vmess
+    server: '2406:3400:388:300::3a'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[06] 伯力|联通|1x'
+    type: vmess
+    server: '2a11:27c0:195::7c8'
+    port: 24444
+    cipher: auto
+    uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /5e60be5f/
+      headers: {}
+    client-fingerprint: chrome
+  - name: '[Hy2]剩余流量：1903.95 GB'
+    server: 31.22.111.7
+    port: 28561
+    sni: xy232x140x19y168xy.m cdn.bilivideo.cn
+    up: 100
+    down: 100
+    skip-cert-verify: true
+    ports: 25000-30000
+    type: hysteria2
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+  - name: '[Hy2]距离下次重置剩余：26 天'
+    server: 31.22.111.7
+    port: 28561
+    sni: xy232x140x19y168xy.m cdn.bilivideo.cn
+    up: 100
+    down: 100
+    skip-cert-verify: true
+    ports: 25000-30000
+    type: hysteria2
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+  - name: '[Hy2]套餐到期：2026-07-17'
+    server: 31.22.111.7
+    port: 28561
+    sni: xy232x140x19y168xy.m cdn.bilivideo.cn
+    up: 100
+    down: 100
+    skip-cert-verify: true
+    ports: 25000-30000
+    type: hysteria2
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+  - name: "[Hy2][稳定应急] \U0001F1FA\U0001F1F8美國鹽湖城A"
+    server: 31.22.111.7
+    port: 28561
+    sni: xy232x140x19y168xy.m cdn.bilivideo.cn
+    up: 100
+    down: 100
+    skip-cert-verify: true
+    ports: 25000-30000
+    type: hysteria2
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+  - name: "[Hy2][稳定应急] \U0001F1FA\U0001F1F8美國鹽湖城B"
+    server: 31.22.111.66
+    port: 29298
+    sni: xy232x140x19y168xy.m cdn.bilivideo.cn
+    up: 100
+    down: 100
+    skip-cert-verify: true
+    ports: 25000-30000
+    type: hysteria2
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+  - name: '[trojan]tw9-200mbs动态-pqs'
+    type: trojan
+    server: ali.ty7.fun
+    port: 32388
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: "[trojan]\U0001F1ED\U0001F1F0香港1g-1x"
+    type: trojan
+    server: ali.ty7.fun
+    port: 39210
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: "[trojan]\U0001F1F2\U0001F1FE-马来西亚"
+    type: trojan
+    server: ali.ty7.fun
+    port: 57993
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: "[trojan]\U0001F1EF\U0001F1F5-日本"
+    type: trojan
+    server: ali.ty7.fun
+    port: 22225
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: "[trojan]\U0001F1F8\U0001F1EC-新加坡"
+    type: trojan
+    server: ali.ty7.fun
+    port: 42729
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: "[trojan]\U0001F1FB\U0001F1F3越南动态ip 1.5x"
+    type: trojan
+    server: lb.tg.a0079.store
+    port: 27644
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: 120.233.86.45
+  - name: '[trojan]台湾-hinet 1x'
+    type: trojan
+    server: 8.163.1.25
+    port: 41811
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: '[trojan]台湾-eco 1x'
+    type: trojan
+    server: ali.ty7.fun
+    port: 51931
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: '[trojan]台湾-eco2 1x'
+    type: trojan
+    server: lb.tg.a0079.store
+    port: 59613
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: cmi.tw8.ni8.me
+  - name: "[trojan]\U0001F1F2\U0001F1FE马来西亚"
+    type: trojan
+    server: lb.tg.a0079.store
+    port: 57993
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: cmi.ml1.ni8.me
+  - name: "[trojan]\U0001F1F9\U0001F1ED泰国 1x"
+    type: trojan
+    server: lb.tg.a0079.store
+    port: 39677
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: false
+    sni: 120.233.86.45
+  - name: "[trojan]ipv6\U0001F1ED\U0001F1F0香港"
+    type: trojan
+    server: ipv6.ni8.gy.a0079.store
+    port: 39210
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: false
+    sni: cmi.hk5.ni8.me
+mixed-port: 7890
+socks-port: 7891
+allow-lan: true
+bind-address: '*'
+mode: Rule
+log-level: info
+external-controller: ':9090'
+dns:
+  enable: true
+  ipv6: true
+  default-nameserver:
+    - 223.5.5.5
+    - 8.8.8.8
+    - 223.6.6.6
+    - 119.29.29.29
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  nameserver:
+    - 'https://doh.pub/dns-query'
+    - 'https://dns.alidns.com/dns-query'
+  fallback:
+    - 'https://doh.dns.sb/dns-query'
+    - 'https://dns.cloudflare.com/dns-query'
+    - 'https://dns.twnic.tw/dns-query'
+    - 'tls://8.8.4.4:853'
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+proxy-groups:
+  - name: 节点选择
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    type: select
+    proxies:
+      - 自动选择
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: 手动切换
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
+    include-all: true
+    type: select
+  - name: 自动选择
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+    type: url-test
+    include-all: true
+    interval: 300
+    tolerance: 50
+  - name: 电报消息
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - 狮城节点
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: OpenAi
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - 狮城节点
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: 油管视频
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - 狮城节点
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: 奈飞视频
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - 奈飞节点
+      - 狮城节点
+      - 香港节点
+      - 台湾节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: 巴哈姆特
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
+    type: select
+    proxies:
+      - 台湾节点
+      - 节点选择
+      - 手动切换
+      - DIRECT
+  - name: 哔哩哔哩
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
+    type: select
+    proxies:
+      - 全球直连
+      - 台湾节点
+      - 香港节点
+  - name: 国外媒体
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+      - DIRECT
+  - name: 国内媒体
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
+    type: select
+    proxies:
+      - DIRECT
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 手动切换
+  - name: 谷歌FCM
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 微软Bing
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/bing.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 微软云盘
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/OneDrive.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 微软服务
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
+    type: select
+    proxies:
+      - 节点选择
+      - DIRECT
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 苹果服务
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 游戏平台
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
+      - 手动切换
+  - name: 网易音乐
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
+    type: select
+    include-all: true
+    filter: (?i)网易|音乐|NetEase|Music
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 自动选择
+  - name: 全球直连
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 自动选择
+  - name: 广告拦截
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 应用净化
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 漏网之鱼
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
+    type: select
+    proxies:
+      - 节点选择
+      - 自动选择
+      - DIRECT
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 美国节点
+      - 韩国节点
+      - 手动切换
+  - name: 香港节点
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
+    include-all: true
+    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 日本节点
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
+    include-all: true
+    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 美国节点
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+    include-all: true
+    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 台湾节点
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
+    include-all: true
+    filter: (?i)台|新北|彰化|TW|Taiwan
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 狮城节点
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+    include-all: true
+    filter: (?i)新加坡|坡|狮城|SG|Singapore
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 韩国节点
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
+    include-all: true
+    filter: (?i)KR|Korea|KOR|首尔|韩|韓
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 奈飞节点
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+    include-all: true
+    filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
+    type: select
+  - name: GLOBAL
+    icon: >-
+      https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+    include-all: true
+    type: select
+    proxies:
+      - 节点选择
+      - 手动切换
+      - 自动选择
+      - 电报消息
+      - OpenAi
+      - 油管视频
+      - 奈飞视频
+      - 巴哈姆特
+      - 哔哩哔哩
+      - 国外媒体
+      - 国内媒体
+      - 谷歌FCM
+      - 微软Bing
+      - 微软云盘
+      - 微软服务
+      - 苹果服务
+      - 游戏平台
+      - 网易音乐
+      - 全球直连
+      - 广告拦截
+      - 应用净化
+      - 漏网之鱼
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+      - 狮城节点
+      - 韩国节点
+      - 奈飞节点
+rule-providers:
+  LocalAreaNetwork:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+    path: ./ruleset/LocalAreaNetwork.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  UnBan:
+    url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list'
+    path: ./ruleset/UnBan.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanAD:
+    url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list'
+    path: ./ruleset/BanAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanProgramAD:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
+    path: ./ruleset/BanProgramAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  GoogleFCM:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
+    path: ./ruleset/GoogleFCM.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  GoogleCN:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
+    path: ./ruleset/GoogleCN.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  SteamCN:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
+    path: ./ruleset/SteamCN.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Bing:
+    url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Bing.list'
+    path: ./ruleset/Bing.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  OneDrive:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/OneDrive.list
+    path: ./ruleset/OneDrive.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Microsoft:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
+    path: ./ruleset/Microsoft.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Apple:
+    url: 'https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list'
+    path: ./ruleset/Apple.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Telegram:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
+    path: ./ruleset/Telegram.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  OpenAi:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
+    path: ./ruleset/OpenAi.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  NetEaseMusic:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
+    path: ./ruleset/NetEaseMusic.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Epic:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list
+    path: ./ruleset/Epic.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Origin:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Origin.list
+    path: ./ruleset/Origin.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Sony:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Sony.list
+    path: ./ruleset/Sony.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Steam:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
+    path: ./ruleset/Steam.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Nintendo:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Nintendo.list
+    path: ./ruleset/Nintendo.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  YouTube:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
+    path: ./ruleset/YouTube.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Netflix:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list
+    path: ./ruleset/Netflix.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Bahamut:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list
+    path: ./ruleset/Bahamut.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BilibiliHMT:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/BilibiliHMT.list
+    path: ./ruleset/BilibiliHMT.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Bilibili:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bilibili.list
+    path: ./ruleset/Bilibili.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaMedia:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
+    path: ./ruleset/ChinaMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyMedia:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
+    path: ./ruleset/ProxyMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyGFWlist:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
+    path: ./ruleset/ProxyGFWlist.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaDomain:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+    path: ./ruleset/ChinaDomain.list
+    behavior: domain
+    interval: 86400
+    format: text
+    type: http
+  ChinaCompanyIp:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+    path: ./ruleset/ChinaCompanyIp.list
+    behavior: ipcidr
+    interval: 86400
+    format: text
+    type: http
+  Download:
+    url: >-
+      https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
+    path: ./ruleset/Download.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+rules:
+  - 'RULE-SET,LocalAreaNetwork,全球直连'
+  - 'RULE-SET,UnBan,全球直连'
+  - 'RULE-SET,BanAD,广告拦截'
+  - 'RULE-SET,BanProgramAD,应用净化'
+  - 'RULE-SET,GoogleFCM,谷歌FCM'
+  - 'RULE-SET,GoogleCN,全球直连'
+  - 'RULE-SET,SteamCN,全球直连'
+  - 'RULE-SET,Bing,微软Bing'
+  - 'RULE-SET,OneDrive,微软云盘'
+  - 'RULE-SET,Microsoft,微软服务'
+  - 'RULE-SET,Apple,苹果服务'
+  - 'RULE-SET,Telegram,电报消息'
+  - 'RULE-SET,OpenAi,OpenAi'
+  - 'RULE-SET,NetEaseMusic,网易音乐'
+  - 'RULE-SET,Epic,游戏平台'
+  - 'RULE-SET,Origin,游戏平台'
+  - 'RULE-SET,Sony,游戏平台'
+  - 'RULE-SET,Steam,游戏平台'
+  - 'RULE-SET,Nintendo,游戏平台'
+  - 'RULE-SET,YouTube,油管视频'
+  - 'RULE-SET,Netflix,奈飞视频'
+  - 'RULE-SET,Bahamut,巴哈姆特'
+  - 'RULE-SET,BilibiliHMT,哔哩哔哩'
+  - 'RULE-SET,Bilibili,哔哩哔哩'
+  - 'RULE-SET,ChinaMedia,国内媒体'
+  - 'RULE-SET,ProxyMedia,国外媒体'
+  - 'RULE-SET,ProxyGFWlist,节点选择'
+  - 'RULE-SET,ChinaDomain,全球直连'
+  - 'RULE-SET,ChinaCompanyIp,全球直连'
+  - 'RULE-SET,Download,全球直连'
+  - 'GEOIP,CN,全球直连'
+  - 'MATCH,漏网之鱼'
