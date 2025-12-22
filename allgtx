@@ -1,0 +1,3070 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇰 V2T香港 01
+  server: hkn.timoyun.cyou
+  port: 56000
+  type: hysteria2
+  password: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  auth: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  sni: hkn.timoyun.cyou
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  udp: true
+- name: 🇯🇵 V2T日本 01
+  server: jpd.timoyun.cyou
+  port: 56000
+  type: hysteria2
+  password: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  auth: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  sni: jpd.timoyun.cyou
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  udp: true
+- name: 🇸🇬 V2T新加坡 01
+  server: sgx.timoyun.cyou
+  port: 56000
+  type: hysteria2
+  password: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  auth: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  sni: sgx.timoyun.cyou
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  udp: true
+- name: 🇦🇺 V2T悉尼 01
+  server: aui.timoyun.cyou
+  port: 58000
+  type: hysteria2
+  password: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  auth: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  sni: aui.timoyun.cyou
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  udp: true
+- name: 🇰🇷 V2T韩国 01
+  server: krn.timoyun.cyou
+  port: 443
+  type: hysteria2
+  password: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  auth: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  sni: krn.timoyun.cyou
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  udp: true
+- name: 🇺🇸 V1T美国 02
+  server: ustnb.timoyun.cyou
+  port: 54444
+  type: hysteria2
+  password: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  auth: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  sni: ustnb.timoyun.cyou
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  udp: true
+- name: 🇺🇸 V1N美国 03
+  server: 209.141.41.196
+  port: 443
+  type: vless
+  uuid: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc
+    short-id: 751c0f48
+  servername: www.aa.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇬🇧 V1T英国 01
+  server: ukg.timoyun.cyou
+  port: 443
+  type: hysteria2
+  password: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  auth: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  sni: ukg.timoyun.cyou
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  udp: true
+- name: 🇺🇸 备用美国
+  server: ustn.timoyun.cyou
+  port: 443
+  type: hysteria2
+  password: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  auth: 4f6dd091-6a68-491c-b6ff-664a407f867d
+  sni: ustn.timoyun.cyou
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: NTkzZjI4NTgxZTcyYzBiZA==
+  udp: true
+- name: 🇭🇰 [Hy2][🇭🇰] 香港 01
+  server: hy5.hy2yydsapi.top
+  port: 8443
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy5.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 [Hy2][🇭🇰] 香港 02
+  server: hy5.hy2yydsapi.top
+  port: 8089
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy5.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 [Hy2][🇭🇰] 香港 03
+  server: hy12.hy2yydsapi.top
+  port: 8089
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy12.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 [Hy2][🇭🇰] 香港 06
+  server: hy13.hy2yydsapi.top
+  port: 8089
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy13.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇲🇴 [Hy2][🇲🇴] 澳门 01
+  server: hy9.hy2yydsapi.top
+  port: 8089
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy9.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇼 [Hy2][🇨🇳] 台湾 01
+  server: hy6.hy2yydsapi.top
+  port: 8089
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy6.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 [Hy2][🇺🇸] 美国 01
+  server: hy1.hy2yydsapi.top
+  port: 8443
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy1.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 [Hy2][🇺🇸] 美国 05
+  server: hy10.hy2yydsapi.top
+  port: 8443
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy10.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 [Hy2][🇯🇵] 日本 01
+  server: hy11.hy2yydsapi.top
+  port: 8443
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy11.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇦🇺 [Hy2][🇦🇺] 悉尼 01
+  server: hy3.hy2yydsapi.top
+  port: 8443
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy3.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧 [Hy2][🇬🇧] 英国 01
+  server: hy7.hy2yydsapi.top
+  port: 8443
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy7.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧 [Hy2][🇬🇧] 英国 02
+  server: hy7.hy2yydsapi.top
+  port: 680
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy7.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 [Hy2][🇸🇬] 新加坡 01
+  server: hy2.hy2yydsapi.top
+  port: 8443
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy2.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇪🇸 [Hy2][🇪🇸] 西班牙 01
+  server: hy8.hy2yydsapi.top
+  port: 8443
+  type: hysteria2
+  password: 9c23940e-efd8-4763-bfb5-54739b50893d
+  auth: 9c23940e-efd8-4763-bfb5-54739b50893d
+  sni: hy8.hy2yydsapi.top
+  up: 50
+  down: 100
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 [vless][🇭🇰] 香港 04
+  server: hy12.hy2yydsapi.top
+  port: 3080
+  type: vless
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+    short-id: 607e67b1
+  servername: www.python.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 [vless][🇭🇰] 香港 07
+  server: hy13.hy2yydsapi.top
+  port: 3080
+  type: vless
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+    short-id: 607e67b1
+  servername: www.python.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇲🇴 [vless][🇲🇴] 澳门 02
+  server: hy9.hy2yydsapi.top
+  port: 8080
+  type: vless
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+    short-id: 607e67b1
+  servername: www.python.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇹🇼 [vless][🇨🇳] 台湾 02
+  server: hy6.hy2yydsapi.top
+  port: 8080
+  type: vless
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+    short-id: 607e67b1
+  servername: www.python.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 [vless][🇺🇸] 美国 02
+  server: hy1.hy2yydsapi.top
+  port: 8080
+  type: vless
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+    short-id: 607e67b1
+  servername: www.python.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 [vless][🇺🇸] 美国 06
+  server: hy10.hy2yydsapi.top
+  port: 8080
+  type: vless
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+    short-id: 607e67b1
+  servername: www.python.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇯🇵 [vless][🇯🇵] 日本 02
+  server: hy11.hy2yydsapi.top
+  port: 8080
+  type: vless
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+    short-id: 607e67b1
+  servername: www.python.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇦🇺 [vless][🇦🇺] 悉尼 02
+  server: hy3.hy2yydsapi.top
+  port: 8080
+  type: vless
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+    short-id: 607e67b1
+  servername: www.python.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇸🇬 [vless][🇸🇬] 新加坡 02
+  server: hy2.hy2yydsapi.top
+  port: 8080
+  type: vless
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+    short-id: 607e67b1
+  servername: www.python.org
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 [vmess][🇭🇰] 香港 05
+  server: hy12.hy2yydsapi.top
+  port: 6121
+  type: vmess
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hy12.hy2yydsapi.top
+  udp: true
+- name: 🇭🇰 [vmess][🇭🇰] 香港 08
+  server: hy13.hy2yydsapi.top
+  port: 6110
+  type: vmess
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hy13.hy2yydsapi.top
+  udp: true
+- name: 🇲🇴 [vmess][🇲🇴] 澳门 03
+  server: hy9.hy2yydsapi.top
+  port: 8118
+  type: vmess
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hy9.hy2yydsapi.top
+  udp: true
+- name: 🇹🇼 [vmess][🇨🇳] 台湾 03
+  server: hy6.hy2yydsapi.top
+  port: 8115
+  type: vmess
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hy6.hy2yydsapi.top
+  udp: true
+- name: 🇺🇸 [vmess][🇺🇸] 美国 03
+  server: hy1.hy2yydsapi.top
+  port: 8099
+  type: vmess
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hy1.hy2yydsapi.top
+  udp: true
+- name: 🇺🇸 [vmess][🇺🇸] 美国 07
+  server: hy10.hy2yydsapi.top
+  port: 8106
+  type: vmess
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hy10.hy2yydsapi.top
+  udp: true
+- name: 🇯🇵 [vmess][🇯🇵] 日本 03
+  server: hy11.hy2yydsapi.top
+  port: 8112
+  type: vmess
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hy11.hy2yydsapi.top
+  udp: true
+- name: 🇦🇺 [vmess][🇦🇺] 悉尼 03
+  server: hy3.hy2yydsapi.top
+  port: 8105
+  type: vmess
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hy3.hy2yydsapi.top
+  udp: true
+- name: 🇬🇧 [vmess][🇬🇧] 英国 03
+  server: hy7.hy2yydsapi.top
+  port: 5105
+  type: vmess
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hy7.hy2yydsapi.top
+  udp: true
+- name: 🇸🇬 [vmess][🇸🇬] 新加坡 03
+  server: hy2.hy2yydsapi.top
+  port: 8115
+  type: vmess
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hy2.hy2yydsapi.top
+  udp: true
+- name: 🇪🇸 [vmess][🇪🇸] 西班牙 03
+  server: hy8.hy2yydsapi.top
+  port: 8098
+  type: vmess
+  uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hy8.hy2yydsapi.top
+  udp: true
+- name: 🇺🇸 美国高速
+  server: 69.84.182.13
+  port: 443
+  type: vless
+  uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+  tls: true
+  tfo: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gsjc/us1
+    headers:
+      Host: us1-gs.aiopen.sbs
+  udp: true
+- name: 🇺🇸 美国高速2
+  server: 208.87.242.111
+  port: 443
+  type: vless
+  uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Wn_r8n28FaFq6N_B8wAAF2mrJs8TgsYzwImhuuY-wy8
+    short-id: 2011bd65
+  servername: tv.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇹🇼 台湾Hinet
+  server: kbgs.hinet.tw1.yydjc.top
+  port: 443
+  type: vless
+  uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UtL1fZqK9sl2QQaS03BQnfYBAnH760eJ_4YzSR9RniM
+    short-id: 601a08ef
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国凤凰城
+  server: 132.226.147.10
+  port: 443
+  type: vless
+  uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: OEZ3C-1OCSYBikqcWudtPP3PpQq2RAI7rFPxWoTCDSc
+    short-id: bffe9292
+  servername: musicstatus.tv.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国阿什本
+  server: 129.158.41.239
+  port: 443
+  type: vless
+  uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Um47-P2c42os7mr1X4Hxw0290YA1FXwyG96p854qol0
+    short-id: 8c38a563b7a004d8
+  servername: musicstatus.tv.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇦🇺 悉尼高速
+  server: 192.9.164.54
+  port: 443
+  type: vless
+  uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 9oOtS_WWQMj6h4L72o1Lbu9ze_lmW_2PQy4diKpBjQI
+    short-id: ba9c05e6cce34e2e
+  servername: musicstatus.tv.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-mm1超x2
+  server: v77.emovpn.buzz
+  port: 443
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v77.emovpn.buzz
+  udp: true
+- name: 🇭🇰 香港-mm6超x2
+  server: v88.emovpn.buzz
+  port: 443
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v88.emovpn.buzz
+  udp: true
+- name: 🇭🇰 香港-mm8超x2
+  server: t21.emovpn.buzz
+  port: 443
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  sni: t21.emovpn.buzz
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港-m12超x2
+  server: v82.emovpn.buzz
+  port: 443
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v82.emovpn.buzz
+  udp: true
+- name: 🇭🇰 香港-m15超x2
+  server: t29.emovpn.buzz
+  port: 443
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  sni: t29.emovpn.buzz
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本-mm6超x2
+  server: v85.emovpn.buzz
+  port: 2053
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v85.emovpn.buzz
+  udp: true
+- name: 🇯🇵 日本-mm9超x2
+  server: t28.emovpn.buzz
+  port: 6149
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国-mm5普x2
+  server: t25.emovpn.buzz
+  port: 6201
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国-mm6普x2
+  server: t44.emovpn.buzz
+  port: 6207
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  sni: www.python.org
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 德国-mm1普x2
+  server: t43.emovpn.buzz
+  port: 6203
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  sni: www.baidu.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇼 台湾-mm3超x2
+  server: tw66.emovpn.buzz
+  port: 2346
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pull.free.video.10010.com
+  udp: true
+- name: 🇺🇸 美国m1超| 三网优化 x2
+  server: us72.emovpn.buzz
+  port: 8246
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pull.free.video.10010.com
+  udp: true
+- name: 🇺🇸 美国m2超| 三网优化 x2
+  server: us73.emovpn.buzz
+  port: 6242
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pull.free.video.10010.com
+  udp: true
+- name: 🇸🇬 新加坡m1超| 解锁 x2
+  server: sg70.emovpn.buzz
+  port: 6259
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pull.free.video.10010.com
+  udp: true
+- name: 🇸🇬 新加坡m2超| 解锁 x2
+  server: sg71.emovpn.buzz
+  port: 8245
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pull.free.video.10010.com
+  udp: true
+- name: 虚天殿超x2
+  server: v12.emovpn.buzz
+  port: 443
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v12.emovpn.buzz
+  udp: true
+- name: 七玄殿超x2
+  server: t17.emovpn.buzz
+  port: 8138
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  skip-cert-verify: true
+  udp: true
+- name: 星尘阁超x2
+  server: t18.emovpn.buzz
+  port: 2425
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  skip-cert-verify: true
+  udp: true
+- name: 内星海超x1
+  server: t2.emovpn.buzz
+  port: 443
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  sni: t2.emovpn.buzz
+  skip-cert-verify: true
+  udp: true
+- name: 外星海超x1
+  server: t3.emovpn.buzz
+  port: 8443
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  skip-cert-verify: true
+  udp: true
+- name: 乱星海超x1
+  server: t4.emovpn.buzz
+  port: 8223
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  skip-cert-verify: true
+  udp: true
+- name: 七灵海超x1
+  server: t5.emovpn.buzz
+  port: 1405
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  skip-cert-verify: true
+  udp: true
+- name: 无边海超x1
+  server: t12.emovpn.buzz
+  port: 1910
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  sni: t12.emovpn.buzz
+  skip-cert-verify: true
+  udp: true
+- name: 寿元果 x2
+  server: t8.emovpn.buzz
+  port: 443
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: 金灵子 x2
+  server: t9.emovpn.buzz
+  port: 8443
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: 雪莲果 | NF x1
+  server: t1.emovpn.buzz
+  port: 1473
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  sni: t1.emovpn.buzz
+  skip-cert-verify: true
+  udp: true
+- name: 哈密瓜 | NF | D+ x1
+  server: t15.emovpn.buzz
+  port: 1413
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  sni: www.baidu.com
+  skip-cert-verify: true
+  udp: true
+- name: 丰水梨 | NF | D+ x1
+  server: t16.emovpn.buzz
+  port: 1701
+  type: trojan
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  sni: www.baidu.com
+  skip-cert-verify: true
+  udp: true
+- name: 青脆李
+  server: v1.nodemo.top
+  port: 4436
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v1.nodemo.top
+  udp: true
+- name: 翠玉梨
+  server: v3.nodemo.top
+  port: 4436
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v3.nodemo.top
+  udp: true
+- name: 圆黄梨
+  server: v005.emovpn.xyz
+  port: 443
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: v005.emovpn.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v005.emovpn.xyz
+  udp: true
+- name: 沙糖桔
+  server: v8.nodemo.top
+  port: 8443
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v8.nodemo.top
+  udp: true
+- name: 冰糖橙
+  server: v9.nodemo.top
+  port: 8443
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v9.nodemo.top
+  udp: true
+- name: 可可果
+  server: v10.emovpn.buzz
+  port: 2087
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v10.emovpn.buzz
+  udp: true
+- name: 猕猴桃
+  server: v51.emovpn.buzz
+  port: 3337
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v51.emovpn.buzz
+  udp: true
+- name: 三红柚
+  server: v53.nodemo.top
+  port: 4060
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v53.nodemo.top
+  udp: true
+- name: 牛奶果
+  server: v39.nodemo.top
+  port: 4646
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v39.nodemo.top
+  udp: true
+- name: 龙蛇果
+  server: v40.nodemo.top
+  port: 8482
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v40.nodemo.top
+  udp: true
+- name: 干梅子
+  server: v41.nodemo.top
+  port: 6459
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v41.nodemo.top
+  udp: true
+- name: 百香果
+  server: v42.nodemo.top
+  port: 3735
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v42.nodemo.top
+  udp: true
+- name: 香水梨
+  server: v43.nodemo.top
+  port: 6684
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v43.nodemo.top
+  udp: true
+- name: 黑加仑
+  server: v44.nodemo.top
+  port: 8422
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v44.nodemo.top
+  udp: true
+- name: 妃子笑
+  server: v45.nodemo.top
+  port: 8297
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v45.nodemo.top
+  udp: true
+- name: 红伽力
+  server: v46.nodemo.top
+  port: 4705
+  type: vmess
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v46.nodemo.top
+  udp: true
+- name: 🇭🇰 香港 01｜1x HK
+  server: dragonfligh.blzstatic.online
+  port: 38601
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 02｜1x HK
+  server: hearthstone.blzstatic.online
+  port: 38602
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 03｜1x HK
+  server: overwatch.blzstatic.online
+  port: 38603
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 04｜1x HK
+  server: wowclassic.blzstatic.online
+  port: 38604
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 新加坡 01｜1x SG
+  server: dragonfligh.blzstatic.online
+  port: 38501
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 新加坡 02｜1x SG
+  server: hearthstone.blzstatic.online
+  port: 38502
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 新加坡 03｜1x SG
+  server: overwatch.blzstatic.online
+  port: 38503
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬 新加坡 04｜1x SG
+  server: wowclassic.blzstatic.online
+  port: 38504
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 01｜1x JP
+  server: dragonfligh.blzstatic.online
+  port: 38701
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 02｜1x JP
+  server: hearthstone.blzstatic.online
+  port: 38702
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 03｜1x JP
+  server: overwatch.blzstatic.online
+  port: 38703
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 04｜1x JP
+  server: wowclassic.blzstatic.online
+  port: 38704
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷 韩国 01｜1x KR
+  server: dragonfligh.blzstatic.online
+  port: 38801
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷 韩国 02｜1x KR
+  server: hearthstone.blzstatic.online
+  port: 38802
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷 韩国 03｜1x KR
+  server: overwatch.blzstatic.online
+  port: 38803
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷 韩国 04｜1x KR
+  server: wowclassic.blzstatic.online
+  port: 38804
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 01｜1x US
+  server: dragonfligh.blzstatic.online
+  port: 38901
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 02｜1x US
+  server: hearthstone.blzstatic.online
+  port: 38902
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 03｜1x US
+  server: overwatch.blzstatic.online
+  port: 38903
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 04｜1x US
+  server: wowclassic.blzstatic.online
+  port: 38904
+  type: trojan
+  password: 1a379e3b-a22c-4229-8f2c-c372f78cb6e9
+  sni: epicgames-1379018446.cos.ap-hongkong.myqcloud.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美西S1|1x
+  server: v6uss1.lajichang.xyz
+  port: 25555
+  type: ss
+  cipher: aes-128-gcm
+  password: b0535a56-140e-463f-8462-4511e42c23ce
+  udp: true
+- name: 🇭🇰 香港S1|1x
+  server: v6hks1.lajichang.xyz
+  port: 25555
+  type: ss
+  cipher: aes-128-gcm
+  password: b0535a56-140e-463f-8462-4511e42c23ce
+  udp: true
+- name: 🇭🇰 香港S5|1x
+  server: v6hks5.lajichang.xyz
+  port: 25555
+  type: ss
+  cipher: aes-128-gcm
+  password: b0535a56-140e-463f-8462-4511e42c23ce
+  udp: true
+- name: 🇯🇵 日本S2|1x
+  server: v6jps2.lajichang.xyz
+  port: 25555
+  type: ss
+  cipher: aes-128-gcm
+  password: b0535a56-140e-463f-8462-4511e42c23ce
+  udp: true
+- name: 🇸🇬 新加坡S1|1x
+  server: v6sgs1.lajichang.xyz
+  port: 25555
+  type: ss
+  cipher: aes-128-gcm
+  password: b0535a56-140e-463f-8462-4511e42c23ce
+  udp: true
+- name: 🇸🇬 新加坡S2|1x
+  server: v6sgs2.lajichang.xyz
+  port: 25555
+  type: ss
+  cipher: aes-128-gcm
+  password: b0535a56-140e-463f-8462-4511e42c23ce
+  udp: true
+- name: 🇺🇸 美西S2|1x
+  server: v6uss2.lajichang.xyz
+  port: 25555
+  type: ss
+  cipher: aes-128-gcm
+  password: b0535a56-140e-463f-8462-4511e42c23ce
+  udp: true
+- name: 🇯🇵 日本1|1x
+  server: 2a12:f8c1:50:8::513
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇯🇵 日本2|1x
+  server: 2404:c140:2000:3::3:ccc
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇯🇵 日本3|1x
+  server: '2a12:bec0:167:1178::'
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇯🇵 日本6|1xw
+  server: 2a12:a300:3400::8f6a:163
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇯🇵 日本7|1xw
+  server: 2a12:a300:500::2925:1fc2
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇯🇵 日本8|1xw
+  server: 2a12:a300:500::8289:5957
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西1|1x
+  server: 2607:f130:0:ee:ff:ff:13b4:61b5
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西2|1x
+  server: 2607:f130:0:ee:ff:ff:18b6:98fe
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西3|1x
+  server: 2605:8340::b:0:ca:0:a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西4|1x
+  server: 2602:f947:0:1b::842d
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西5|1x
+  server: 2605:8340::b:0:c2:0:a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西6|1x
+  server: 2605:6400:5245::1
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西7|1x
+  server: 2607:f130:0:f3:ff:ff:184b:9520
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西8|1x
+  server: 2602:fa4f:900:2d88:4d53:b6e3:502e:383c
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西9|1x
+  server: 2602:fa4f:900:1491:486e:8067:6be1:2ccf
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西10|1x
+  server: 2607:f130:0:f3:ff:ff:2ce9:86f5
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西11|1x
+  server: '2605:52c0:1001:5ce::'
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西13|1x
+  server: 2607:f130:0:144::4a8b:fab5
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇺🇸 美西14|1x
+  server: 2604:6600:0:11::34
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇹🇼 台湾1|1x
+  server: 2001:b030:a42d:5d01::1043
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇹🇼 台湾2|1x
+  server: 2400:70e0:b000:0:8ac:4fff:fe14:7e0
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇹🇼 台湾3|1x
+  server: 2406:8dc0:6001::12c5
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇹🇼 台湾4|1x
+  server: 2406:8dc0:600a::13
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇹🇼 台湾5|1xn
+  server: 2406:8dc0:6004:8bbb:5c76:6773:58d8:6205
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇹🇼 台湾Hinet1|1x
+  server: tvhinet.lajichang.xyz
+  port: 2052
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /7e60be4f/
+    headers:
+      Host: tvhinet.lajichang.xyz
+  udp: true
+- name: 🇭🇰 香港HKT1|1x
+  server: hkt.lajichang.xyz
+  port: 2052
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /7e60be4f/
+    headers:
+      Host: hkt.lajichang.xyz
+  udp: true
+- name: 🇭🇰 香港1|1x|移动
+  server: 2400:c620:2e:551f::1
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港2|1x
+  server: 2401:b60:5:9c::a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港3|1x
+  server: 2a0f:7803:fb31:a4::a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港4|1x|移动
+  server: 2400:e3e0:f5a9:4dec:d700:b23c:f701:2c4d
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港5|1x|移动
+  server: 2400:c620:28:28bc::1
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港6|1x
+  server: 2602:fa4f:200:40aa:133b:47a2:a3ce:7fe4
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港7|1x|移动
+  server: 2400:e3e0:f5a9:8e0f:109b:83c8:c9e1:deda
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港8|1x|移动
+  server: 2400:e3e0:f5a9:177e:d9f4:2288:e161:5b42
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港9|1x
+  server: 2602:fa4f:202:5cf7:f37b:4ab4:59b2:d997
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港11|1x
+  server: 2400:8a20:112:1::687
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港12|1x
+  server: 2400:8a20:112:1::688
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港13|1x
+  server: 2400:8a20:112:1::68e
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /7e60be4f/
+  udp: true
+- name: 🇭🇰 香港14|1x|移动
+  server: 2400:e3e0:f5a9:8a43:265:a68a:3cec:108b
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港15|1xn
+  server: 2a0c:9a40:9201:43d3::1
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港16|1x
+  server: 2a12:3fc2:ab41:69ff:c43a:1345:0:1
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港17|1x|移动
+  server: 2400:e3e0:f5a9:656:be38:23be:bc61:6c3f
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港18|1x|移动
+  server: 2400:e3e0:f5a9:6045:1249:ebc6:219d:61fe
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港19|1x|移动
+  server: 2400:c620:28:abb3::1
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港20|1x|移动
+  server: 2400:c620:28:a087::1
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港21|1x|移动
+  server: 2a0f:7803:fb40:23::a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港22|1x|移动
+  server: 2400:c620:29:13::a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇭🇰 香港23|1x|移动
+  server: 2400:c620:29:7c::a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇸🇬 新加坡1|1x
+  server: 2a0e:97c0:7d4:ff05::a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇸🇬 新加坡2|1x
+  server: 2a0e:97c0:7d4:ff3c::a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇸🇬 新加坡3|1x
+  server: 2a02:6ea0:d14a::cdf0:54bf
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇸🇬 新加坡8|1x
+  server: 2605:e440:16::281
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇸🇬 新加坡9|1x
+  server: 2605:e440:16::346
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇰🇷 韩国1|1x
+  server: 2603:c024:b:ed11:ca30:a4cf:af3a:d423
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇰🇷 韩国2|1x
+  server: 2603:c024:b:ed11:1a52:82c9:e0fb:ee1d
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇰🇷 韩国3|1x
+  server: 2603:c024:b:ed11:aaa9:2a92:768c:55a2
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇰🇷 韩国4|1x
+  server: 2603:c024:b:ed11:bbba:dec7:f562:3ead
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇦🇺 澳洲1|1x
+  server: 2a11:3:101::10ad
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇩🇪 德国2|1x
+  server: 2602:f92a:300:3a::a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇩🇪 德国3|1x
+  server: 2a01:4f8:242:1d0e::1461:40
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇬🇧 英国2|1x
+  server: 2a01:a500:1087:1:31::1
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇬🇧 英国3|1x
+  server: 2a0c:9a40:9211:1:ec07:6ff:fe0f:27b9
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇬🇧 英国4|1x
+  server: 2a12:bec0:390:10::a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇷🇺 俄罗斯1|1x
+  server: 2a00:b700::6:288
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇦🇷 阿根廷1|1x
+  server: '2a01:4f8:162:54d9:16f::'
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇯🇵 尼日利亚1|1x
+  server: '2a01:4f8:162:54d9:16a::'
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇫🇷 法国1|1x
+  server: 2a01:7a7:2:3343::2b93:6841
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇪🇬 埃及1|1x
+  server: '2a01:4f8:162:54d9:6f::'
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇻🇳 越南1|1x
+  server: 2400:6ea0:0:1351::4c89
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇦🇺 澳洲2|1x
+  server: 2406:3400:388:300::21
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇦🇺 澳洲3|1x
+  server: 2406:3400:388:300::f1
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: 🇦🇺 澳洲4|1x
+  server: 2406:3400:388:300::3a
+  port: 24444
+  type: vmess
+  uuid: b0535a56-140e-463f-8462-4511e42c23ce
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+  udp: true
+- name: '会员群: https://t.me/emovpn_vip'
+  type: vmess
+  server: v52.nodemo.top
+  port: 3543
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v52.nodemo.top
+  servername: v52.nodemo.top
+- name: 「🇨🇳」台湾-S01「专」x5
+  type: ss
+  server: s26.nodemo.top
+  port: 1089
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇯🇵」日本-快线「专」x5
+  type: ss
+  server: s35.nodemo.top
+  port: 1089
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇨🇳」台湾-V01「专」x5
+  type: vmess
+  server: v93.nodemo.top
+  port: 1008
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v93.nodemo.top
+  servername: v93.nodemo.top
+- name: 「🇭🇰」香港-S01「超」x5
+  type: ss
+  server: s27.nodemo.top
+  port: 2090
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇺🇸」美国-S28「超」x5
+  type: ss
+  server: s28.nodemo.top
+  port: 1091
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇸🇬」新加坡S29「超」x5
+  type: ss
+  server: s29.nodemo.top
+  port: 1090
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇺🇸」美国-S30「超」x5
+  type: ss
+  server: s30.nodemo.top
+  port: 1090
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇸🇬」新加坡S31「超」x5
+  type: ss
+  server: s31.nodemo.top
+  port: 1089
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇲🇴」澳门-S32「超」x5
+  type: ss
+  server: s32.nodemo.top
+  port: 1088
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇭🇰」香港-S33「超」x5
+  type: ss
+  server: s33.nodemo.top
+  port: 2089
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇺🇸」美国-S34「超」x5
+  type: ss
+  server: s34.nodemo.top
+  port: 1091
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇯🇵」日本-pop「专」x3
+  type: vmess
+  server: v91.nodemo.top
+  port: 4433
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v91.nodemo.top
+  servername: v91.nodemo.top
+- name: 「🇯🇵」日本-003「专」x3
+  type: vmess
+  server: jp76.emovpn.buzz
+  port: 443
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: jp76.emovpn.buzz
+  servername: jp76.emovpn.buzz
+- name: 「🇮🇳」印度-001「普」x3
+  type: trojan
+  server: t42.nodemo.top
+  port: 6103
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+  sni: t42.nodemo.top
+- name: 「🇨🇳」台湾-001「专」x2
+  type: vmess
+  server: tw64.emovpn.buzz
+  port: 8443
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tw64.emovpn.buzz
+  servername: tw64.emovpn.buzz
+- name: 「🇨🇳」台湾-002「专」x2
+  type: vmess
+  server: tw65.emovpn.buzz
+  port: 8443
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tw65.emovpn.buzz
+  servername: tw65.emovpn.buzz
+- name: 「🇸🇬」新加坡01「超」| 解锁 x5
+  type: vmess
+  server: v70.nodemo.top
+  port: 6260
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v70.nodemo.top
+  servername: v70.nodemo.top
+- name: 「🇸🇬」新加坡02「超」| 解锁 x2
+  type: vmess
+  server: v71.nodemo.top
+  port: 8245
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v71.nodemo.top
+  servername: v71.nodemo.top
+- name: 「🇭🇰」紫府圣地「专」| 🚀 x3
+  type: vmess
+  server: v28.nodemo.top
+  port: 8299
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v28.nodemo.top
+  servername: v28.nodemo.top
+- name: 「🇭🇰」大衍圣地「超」| 🚀 x3
+  type: vmess
+  server: v27.nodemo.top
+  port: 1562
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v27.nodemo.top
+  servername: v27.nodemo.top
+- name: 「🇭🇰」天璇圣地「超」| 🚀 x3
+  type: vmess
+  server: v22.nodemo.top
+  port: 2195
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v22.nodemo.top
+  servername: v22.nodemo.top
+- name: 「🇭🇰」仙霞山「超」x3
+  type: vmess
+  server: v16.nodemo.top
+  port: 1971
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v16.nodemo.top
+  servername: v16.nodemo.top
+- name: 「🇬🇧」无花果 - 免流 x3
+  type: vmess
+  server: v50.emovpn.buzz
+  port: 4964
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v50.emovpn.buzz
+  servername: v50.emovpn.buzz
+- name: 「🇬🇧」猕猴桃 - 免流 x1
+  type: vmess
+  server: v51.emovpn.buzz
+  port: 3338
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v51.emovpn.buzz
+  servername: v51.emovpn.buzz
+- name: 「🇺🇸」EMO | 天元果 x5
+  type: vmess
+  server: v33.emoyes.top
+  port: 443
+  uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v33.emoyes.top
+  servername: v33.emoyes.top
+- name: 「🇯🇵」日本-S01「普」x5
+  type: ss
+  server: s1.nodemo.top
+  port: 3099
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇯🇵」日本-S02「普」x5
+  type: ss
+  server: s2.nodemo.top
+  port: 1260
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇯🇵」日本-S03「普」x5
+  type: ss
+  server: s3.nodemo.top
+  port: 1270
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇺🇸」美国-S01「普」x5
+  type: ss
+  server: s4.nodemo.top
+  port: 1271
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇺🇸」美国-S02「普」x5
+  type: ss
+  server: s5.nodemo.top
+  port: 1299
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇸🇬」新加坡S01「普」x5
+  type: ss
+  server: s6.nodemo.top
+  port: 1267
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇮🇳」印度-S01「普」x5
+  type: ss
+  server: s7.nodemo.top
+  port: 1296
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇺🇸」美国-S08「普」x3
+  type: ss
+  server: s8.nodemo.top
+  port: 1259
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇺🇸」美国-S09「普」x3
+  type: ss
+  server: s09.nodemo.top
+  port: 1292
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇺🇸」美国-S11「普」x3
+  type: ss
+  server: s11.nodemo.top
+  port: 1264
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇯🇵」日本-S12「普」x3
+  type: ss
+  server: s12.nodemo.top
+  port: 8084
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇯🇵」日本-S13「普」x3
+  type: ss
+  server: s13.nodemo.top
+  port: 1255
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇸🇬」新加坡S14「普」x3
+  type: ss
+  server: s14.nodemo.top
+  port: 1253
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇸🇬」新加坡S15「普」x3
+  type: ss
+  server: s15.nodemo.top
+  port: 3269
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇬🇧」英国-S16「普」x3
+  type: ss
+  server: s16.nodemo.top
+  port: 1252
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇫🇷」法国-S17「普」x3
+  type: ss
+  server: s17.nodemo.top
+  port: 1274
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇧🇷」巴西-S18「普」x3
+  type: ss
+  server: s18.nodemo.top
+  port: 1273
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇪🇸」西班牙S19「普」x3
+  type: ss
+  server: s19.nodemo.top
+  port: 1298
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇯🇵」日本-S20「超」x3
+  type: ss
+  server: s20.nodemo.top
+  port: 4435
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇯🇵」日本-S21「超」x3
+  type: ss
+  server: s21.nodemo.top
+  port: 1283
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇸🇬」新加坡S22「普」x3
+  type: ss
+  server: s22.nodemo.top
+  port: 1262
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- name: 「🇸🇬」新加坡S23「普」x3
+  type: ss
+  server: s23.nodemo.top
+  port: 3017
+  cipher: chacha20-ietf-poly1305
+  password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+  udp: true
+- type: hysteria2
+  name: '[17] 剩余流量：913.73 GB'
+  server: 128.241.227.213
+  port: 40000
+  ports: 40000-49999
+  password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  sni: bing.com
+  skip-cert-verify: true
+  tfo: false
+- type: anytls
+  name: '[17] 洛杉矶CMIN2-AnyTLS|1x'
+  server: 128.241.227.213
+  port: 3120
+  sni: bing.com
+  skip-cert-verify: true
+  password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+- type: hysteria2
+  name: '[17] 香港hy2测试2|0.5x'
+  server: 2400:8a20:112:1::64d
+  port: 34444
+  password: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  sni: bing.com
+  skip-cert-verify: true
+  tfo: false
+- name: '[17] 香港DMIT1|2x'
+  type: vmess
+  server: '2403:18c0:3:6d7::'
+  port: 24444
+  cipher: auto
+  uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  alterId: 0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+    headers: {}
+  client-fingerprint: chrome
+- name: '[17] 香港DMIT2|2x'
+  type: vmess
+  server: 2403:18c0:3:10a::1
+  port: 24444
+  cipher: auto
+  uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  alterId: 0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+    headers: {}
+  client-fingerprint: chrome
+- name: '[17] 香港24|1x|移动'
+  type: vmess
+  server: 2400:c620:2b:48::a
+  port: 24444
+  cipher: auto
+  uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  alterId: 0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+    headers: {}
+  client-fingerprint: chrome
+- name: '[17] 香港25|1x|移动'
+  type: vmess
+  server: 2400:c620:2b:d9::a
+  port: 24444
+  cipher: auto
+  uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  alterId: 0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+    headers: {}
+  client-fingerprint: chrome
+- name: '[17] 新加坡4|2x'
+  type: vmess
+  server: 2407:cdc0:d002::184f
+  port: 24444
+  cipher: auto
+  uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  alterId: 0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+    headers: {}
+  client-fingerprint: chrome
+- name: '[17] 荷兰1|1x'
+  type: vmess
+  server: 2a07:d884::10ad
+  port: 24444
+  cipher: auto
+  uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  alterId: 0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+    headers: {}
+  client-fingerprint: chrome
+- name: '[17] 荷兰2|1x'
+  type: vmess
+  server: 2a12:9080:1:4c::a
+  port: 24444
+  cipher: auto
+  uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  alterId: 0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+    headers: {}
+  client-fingerprint: chrome
+- name: '[17] 巴基斯坦1|1x'
+  type: vmess
+  server: '2001:df2:d40:9:4075::'
+  port: 24444
+  cipher: auto
+  uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  alterId: 0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+    headers: {}
+  client-fingerprint: chrome
+- name: '[17] 意大利1|1x'
+  type: vmess
+  server: 2a05:4140:3::389f
+  port: 24444
+  cipher: auto
+  uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  alterId: 0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+    headers: {}
+  client-fingerprint: chrome
+- name: '[17] 伯力|联通|1x'
+  type: vmess
+  server: 2a11:27c0:195::7c8
+  port: 24444
+  cipher: auto
+  uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+  alterId: 0
+  tls: false
+  network: ws
+  ws-opts:
+    path: /5e60be5f/
+    headers: {}
+  client-fingerprint: chrome
+- name: '[Hy2]剩余流量：1903.95 GB'
+  server: 31.22.111.7
+  port: 28561
+  sni: xy232x140x19y168xy.m cdn.bilivideo.cn
+  up: 100
+  down: 100
+  skip-cert-verify: true
+  ports: 25000-30000
+  type: hysteria2
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+- name: '[Hy2][稳定应急] 🇺🇸美國鹽湖城B'
+  server: 31.22.111.66
+  port: 29298
+  sni: xy232x140x19y168xy.m cdn.bilivideo.cn
+  up: 100
+  down: 100
+  skip-cert-verify: true
+  ports: 25000-30000
+  type: hysteria2
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+- name: '[trojan]tw9-200mbs动态-pqs'
+  type: trojan
+  server: ali.ty7.fun
+  port: 32388
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: true
+  sni: bilibili.com
+- name: '[trojan]🇭🇰香港1g-1x'
+  type: trojan
+  server: ali.ty7.fun
+  port: 39210
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: true
+  sni: bilibili.com
+- name: '[trojan]🇲🇾-马来西亚'
+  type: trojan
+  server: ali.ty7.fun
+  port: 57993
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: true
+  sni: bilibili.com
+- name: '[trojan]🇯🇵-日本'
+  type: trojan
+  server: ali.ty7.fun
+  port: 22225
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: true
+  sni: bilibili.com
+- name: '[trojan]🇸🇬-新加坡'
+  type: trojan
+  server: ali.ty7.fun
+  port: 42729
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: true
+  sni: bilibili.com
+- name: '[trojan]🇻🇳越南动态ip 1.5x'
+  type: trojan
+  server: lb.tg.a0079.store
+  port: 27644
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: true
+  sni: 120.233.86.45
+- name: '[trojan]台湾-hinet 1x'
+  type: trojan
+  server: 8.163.1.25
+  port: 41811
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: true
+  sni: bilibili.com
+- name: '[trojan]台湾-eco 1x'
+  type: trojan
+  server: ali.ty7.fun
+  port: 51931
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: true
+  sni: bilibili.com
+- name: '[trojan]台湾-eco2 1x'
+  type: trojan
+  server: lb.tg.a0079.store
+  port: 59613
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: true
+  sni: cmi.tw8.ni8.me
+- name: '[trojan]🇲🇾马来西亚'
+  type: trojan
+  server: lb.tg.a0079.store
+  port: 57993
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: true
+  sni: cmi.ml1.ni8.me
+- name: '[trojan]🇹🇭泰国 1x'
+  type: trojan
+  server: lb.tg.a0079.store
+  port: 39677
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: false
+  sni: 120.233.86.45
+- name: '[trojan]ipv6🇭🇰香港'
+  type: trojan
+  server: ipv6.ni8.gy.a0079.store
+  port: 39210
+  password: 00637334-047f-48e8-b659-f78c717fa7e9
+  udp: true
+  skip-cert-verify: false
+  sni: cmi.hk5.ni8.me
