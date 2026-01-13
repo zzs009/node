@@ -4,14 +4,14 @@ mode: rule
 log-level: info
 unified-delay: true
 global-client-fingerprint: chrome
-ipv6: false # 必须关闭，防止 IPv6 隧道导致的 DNS 泄露
+ipv6: false # 核心：严密封锁 IPv6 泄露通道
 
-# 1. DNS 深度优化：实现“国内直连、国外隐身”
+# 1. DNS 深度优化
 dns:
-  enable: true # 核心改进：必须开启才能接管解析
+  enable: true
   listen: :53
   ipv6: false
-  enhanced-mode: fake-ip # 核心改进：防止浏览器直接查询真实 IP
+  enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
     - 119.29.29.29
@@ -19,15 +19,13 @@ dns:
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-   # - https://doh.pub/dns-query
-  # 代理服务器域名解析：确保解析节点地址时不走代理，防止死循环
   proxy-server-nameserver:
     - 8.8.8.8
-  # 只有匹配到国内域名时，才动用国内 DNS，否则一律不解析，防止泄露
+  # 极致防泄露：只有明确是国内域名才用国内 DNS 解析
   nameserver-policy:
-    "geosite:cn": [https://dns.alidns.com/dns-query, 223.5.5.5]
+    "geosite:cn,apple,microsoft": [https://dns.alidns.com/dns-query, 223.5.5.5]
 
-# 2. 流量嗅探：防止 DNS 污染导致的 Cloudflare 误连
+# 2. 流量嗅探
 sniffer:
   enable: true
   sniff:
@@ -38,6 +36,7 @@ sniffer:
   force-domain:
     - "+"
 
+# 3. 节点配置
 proxies:
   - name: vless-reality-vision-us
     type: vless
@@ -75,6 +74,7 @@ proxies:
     sni: www.bing.com
     skip-cert-verify: true
 
+# 4. 策略组
 proxy-groups:
   - name: 🌍 节点选择
     type: select
@@ -94,19 +94,23 @@ proxy-groups:
       - hysteria2-us
       - tuic5-us
 
+# 5. 规则集：加固版逻辑
 rules:
+  # A. 内网与特殊规则
   - GEOIP,LAN,DIRECT,no-resolve
-    
-  # 常见国外服务走代理
-  - GEOSITE,google,🌍 节点选择
-  - GEOSITE,github,🌍 节点选择
-  - GEOSITE,youtube,🌍 节点选择
-  - GEOSITE,telegram,🌍 节点选择
-
-  # 国内加速：命中列表直接走国内 DNS 解析并直连
-  - GEOSITE,CN,DIRECT
-  - GEOIP,CN,DIRECT,no-resolve
+  - DOMAIN-SUFFIX,services.googleapis.cn,🌍 节点选择
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🌍 节点选择
   
-  # 兜底规则
-  - MATCH,🌍 节点选择
+  # B. 广告拦截（可选）
+  - GEOSITE,category-ads-all,REJECT
 
+  # C. 国内流量直接分流（减少国外请求被国内解析的可能）
+  - GEOSITE,CN,DIRECT
+  - GEOSITE,apple-cn,DIRECT
+  - GEOSITE,microsoft-cn,DIRECT
+  
+  # D. 国内 IP 兜底（no-resolve 关键：不匹配时不解析 DNS）
+  - GEOIP,CN,DIRECT,no-resolve
+
+  # E. 终极兜底：未命中上述规则的（全是非中国流量）全部代理
+  - MATCH,🌍 节点选择
