@@ -1,19 +1,112 @@
-ruleset=🚀 节点选择,[]DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-ruleset=🚀 节点选择,[]DOMAIN-SUFFIX,services.googleapis.cn
-ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list
-ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
-ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
-ruleset=DIRECT,[]GEOIP,CN,no-resolve
-ruleset=🚀 节点选择,[]FINAL
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+ipv6: false # 必须关闭，防止 IPv6 隧道导致的 DNS 泄露
 
-custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]DIRECT`.*
-custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
+# 1. DNS 深度优化：实现“国内直连、国外隐身”
+dns:
+  enable: true # 核心改进：必须开启才能接管解析
+  listen: :53
+  ipv6: false
+  enhanced-mode: fake-ip # 核心改进：防止浏览器直接查询真实 IP
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+   # - https://doh.pub/dns-query
+  # 代理服务器域名解析：确保解析节点地址时不走代理，防止死循环
+  proxy-server-nameserver:
+    - 8.8.8.8
+  # 只有匹配到国内域名时，才动用国内 DNS，否则一律不解析，防止泄露
+  nameserver-policy:
+    "geosite:cn": [https://dns.alidns.com/dns-query, 223.5.5.5]
 
-enable_rule_generator=true
-overwrite_original_rules=true
+# 2. 流量嗅探：防止 DNS 污染导致的 Cloudflare 误连
+sniffer:
+  enable: true
+  sniff:
+    TLS:
+      ports: [443, 8443]
+    HTTP:
+      ports: [80, 8080-8880]
+  force-domain:
+    - "+"
+
+proxies:
+  - name: vless-reality-vision-us
+    type: vless
+    server: 35.212.208.219
+    port: 21934
+    uuid: 651343df-0fb6-445d-9e79-143b2b7b7acf
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: apple.com
+    reality-opts:
+      public-key: TAgdTjUWwUBJndvxb718lwG7foitGRVq-xqw3gzcM0s
+      short-id: 0cbdd63a
+    client-fingerprint: chrome
+
+  - name: hysteria2-us
+    type: hysteria2
+    server: 35.212.208.219
+    port: 33251
+    password: 651343df-0fb6-445d-9e79-143b2b7b7acf
+    alpn: [h3]
+    sni: www.bing.com
+    skip-cert-verify: true
+    fast-open: true
+
+  - name: tuic5-us
+    type: tuic
+    server: 35.212.208.219
+    port: 42361
+    uuid: 651343df-0fb6-445d-9e79-143b2b7b7acf
+    password: 651343df-0fb6-445d-9e79-143b2b7b7acf
+    alpn: [h3]
+    reduce-rtt: true
+    sni: www.bing.com
+    skip-cert-verify: true
+
+proxy-groups:
+  - name: 🌍 节点选择
+    type: select
+    proxies:
+      - 🚀 自动选择
+      - vless-reality-vision-us
+      - hysteria2-us
+      - tuic5-us
+      - DIRECT
+
+  - name: 🚀 自动选择
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - vless-reality-vision-us
+      - hysteria2-us
+      - tuic5-us
+
+rules:
+  - GEOIP,LAN,DIRECT,no-resolve
+    
+  # 常见国外服务走代理
+  - GEOSITE,google,🌍 节点选择
+  - GEOSITE,github,🌍 节点选择
+  - GEOSITE,youtube,🌍 节点选择
+  - GEOSITE,telegram,🌍 节点选择
+
+  # 国内加速：命中列表直接走国内 DNS 解析并直连
+  - GEOSITE,CN,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
+  
+  # 兜底规则
+  - MATCH,🌍 节点选择
+
