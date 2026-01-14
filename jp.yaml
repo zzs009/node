@@ -4,48 +4,58 @@ mode: rule
 log-level: info
 unified-delay: true
 global-client-fingerprint: chrome
+ipv6: ture 
+
+# 1. DNS 深度优化：实现“国内直连、国外隐身”
 dns:
-  enable: false
+  enable: true # 核心改进：必须开启才能接管解析
   listen: :53
-  ipv6: true
-  enhanced-mode: fake-ip
+  enhanced-mode: fake-ip # 核心改进：防止浏览器直接查询真实 IP
   fake-ip-range: 198.18.0.1/16
-  default-nameserver: 
+  default-nameserver:
     - 223.5.5.5
-    - 8.8.8.8
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-  fallback:
-    - https://1.0.0.1/dns-query
-    - tls://dns.google
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
+  # 代理服务器域名解析：确保解析节点地址时不走代理，防止死循环
+  proxy-server-nameserver:
+    - 8.8.8.8
+  # 只有匹配到国内域名时，才动用国内 DNS，否则一律不解析，防止泄露
+  nameserver-policy:
+    "geosite:cn": [https://dns.alidns.com/dns-query, 223.5.5.5]
+
+# 2. 流量嗅探：防止 DNS 污染导致的 Cloudflare 误连
+sniffer:
+  enable: true
+  sniff:
+    TLS:
+      ports: [443, 8443]
+    HTTP:
+      ports: [80, 8080-8880]
+  force-domain:
+    - "+"
 
 proxies:
 - name: vless-reality-vision-JPSB2-2025122016460652d9c6               
   type: vless
   server: 82.40.47.202                           
-  port: 15473                                
-  uuid: 8664992a-d9e7-4e9d-9ddc-5f7e849173d0   
+  port: 38776                                
+  uuid: 62b388f9-0d99-4124-a6ea-19cd5847ff4d   
   network: tcp
   udp: true
   tls: true
   flow: xtls-rprx-vision
   servername: apple.com                 
   reality-opts: 
-    public-key: MfYSEFN2YRLeJm-ZrpNmjHGfxaIEvSePhFm-whzPAE4    
-    short-id: e4591ff8                    
+    public-key: gHr7BcxwQeU0E-K9vsErhAF6JsEa5ThnsG6wCukMZCA    
+    short-id: f530dd94                      
   client-fingerprint: chrome                  
 
 - name: vmess-ws-JPSB2-2025122016460652d9c6                         
   type: vmess
   server: 82.40.47.202                        
-  port: 8080                                     
-  uuid: 8664992a-d9e7-4e9d-9ddc-5f7e849173d0       
+  port: 2086                                     
+  uuid: 62b388f9-0d99-4124-a6ea-19cd5847ff4d       
   alterId: 0
   cipher: auto
   udp: true
@@ -53,19 +63,15 @@ proxies:
   network: ws
   servername: www.bing.com                    
   ws-opts:
-    path: "8664992a-d9e7-4e9d-9ddc-5f7e849173d0-vm"                             
+    path: "62b388f9-0d99-4124-a6ea-19cd5847ff4d-vm"                             
     headers:
       Host: www.bing.com                     
-
-
-
-
 
 - name: hysteria2-JPSB2-2025122016460652d9c6                            
   type: hysteria2                                      
   server: 82.40.47.202                               
-  port: 37639                                
-  password: 8664992a-d9e7-4e9d-9ddc-5f7e849173d0                          
+  port: 57967                                
+  password: 62b388f9-0d99-4124-a6ea-19cd5847ff4d                          
   alpn:
     - h3
   sni: www.bing.com                               
@@ -74,10 +80,10 @@ proxies:
 
 - name: tuic5-JPSB2-2025122016460652d9c6                            
   server: 82.40.47.202                      
-  port: 12739                                    
+  port: 28610                                    
   type: tuic
-  uuid: 8664992a-d9e7-4e9d-9ddc-5f7e849173d0       
-  password: 8664992a-d9e7-4e9d-9ddc-5f7e849173d0   
+  uuid: 62b388f9-0d99-4124-a6ea-19cd5847ff4d       
+  password: 62b388f9-0d99-4124-a6ea-19cd5847ff4d   
   alpn: [h3]
   disable-sni: true
   reduce-rtt: true
@@ -85,6 +91,37 @@ proxies:
   congestion-controller: bbr
   sni: www.bing.com                                
   skip-cert-verify: true
+- name: vmess-tls-argo临时-JPSB2-2025122016460652d9c6                         
+  type: vmess
+  server: www.visa.com.sg                        
+  port: 8443                                     
+  uuid: 62b388f9-0d99-4124-a6ea-19cd5847ff4d       
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: counts-mainstream-already-assured.trycloudflare.com                    
+  ws-opts:
+    path: "62b388f9-0d99-4124-a6ea-19cd5847ff4d-vm"                             
+    headers:
+      Host: counts-mainstream-already-assured.trycloudflare.com
+
+- name: vmess-argo临时-JPSB2-2025122016460652d9c6                         
+  type: vmess
+  server: www.visa.com.sg                        
+  port: 8880                                     
+  uuid: 62b388f9-0d99-4124-a6ea-19cd5847ff4d       
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: counts-mainstream-already-assured.trycloudflare.com                    
+  ws-opts:
+    path: "62b388f9-0d99-4124-a6ea-19cd5847ff4d-vm"                             
+    headers:
+      Host: counts-mainstream-already-assured.trycloudflare.com  
 
 proxy-groups:
 - name: 负载均衡
@@ -97,6 +134,8 @@ proxy-groups:
     - vmess-ws-JPSB2-2025122016460652d9c6
     - hysteria2-JPSB2-2025122016460652d9c6
     - tuic5-JPSB2-2025122016460652d9c6
+    - vmess-tls-argo临时-JPSB2-2025122016460652d9c6
+    - vmess-argo临时-JPSB2-2025122016460652d9c6
 
 - name: 自动选择
   type: url-test
@@ -108,6 +147,8 @@ proxy-groups:
     - vmess-ws-JPSB2-2025122016460652d9c6
     - hysteria2-JPSB2-2025122016460652d9c6
     - tuic5-JPSB2-2025122016460652d9c6
+    - vmess-tls-argo临时-JPSB2-2025122016460652d9c6
+    - vmess-argo临时-JPSB2-2025122016460652d9c6
     
 - name: 🌍选择代理节点
   type: select
@@ -119,7 +160,21 @@ proxy-groups:
     - vmess-ws-JPSB2-2025122016460652d9c6
     - hysteria2-JPSB2-2025122016460652d9c6
     - tuic5-JPSB2-2025122016460652d9c6
+    - vmess-tls-argo临时-JPSB2-2025122016460652d9c6
+    - vmess-argo临时-JPSB2-2025122016460652d9c6
 rules:
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
+  - GEOIP,LAN,DIRECT,no-resolve
+  
+  
+  # 常见国外服务走代理
+  - GEOSITE,google,🌍选择代理节点
+  - GEOSITE,github,🌍选择代理节点
+  - GEOSITE,youtube,🌍选择代理节点
+  - GEOSITE,telegram,🌍选择代理节点
+
+  # 国内加速：命中列表直接走国内 DNS 解析并直连
+  - GEOSITE,CN,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
+  
+  # 兜底规则
   - MATCH,🌍选择代理节点
