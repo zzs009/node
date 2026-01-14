@@ -80,6 +80,7 @@ proxies:
   congestion-controller: bbr
   sni: www.bing.com                                
   skip-cert-verify: true
+  
 - name: vmess-tls-argo临时-JPSB2-2025122016460652d9c6                         
   type: vmess
   server: www.visa.com.sg                        
@@ -164,3 +165,4 @@ rules:
   
   # 兜底规则
   - MATCH,🌍选择代理节点
+
