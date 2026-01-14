@@ -4,7 +4,7 @@ mode: rule
 log-level: info
 unified-delay: true
 global-client-fingerprint: chrome
-ipv6: ture 
+ipv6: false 
 
 # 1. DNS 深度优化：实现“国内直连、国外隐身”
 dns:
@@ -165,4 +165,5 @@ rules:
   
   # 兜底规则
   - MATCH,🌍选择代理节点
+
 
