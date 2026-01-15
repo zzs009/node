@@ -176,12 +176,16 @@ rules:
   - DOMAIN-KEYWORD,claude,🤖 AI
   
   # --- Google Gemini (重要) ---
-  - DOMAIN-SUFFIX,google.com,🤖 AI
-  - DOMAIN-SUFFIX,bard.google.com,🤖 AI
   - DOMAIN-SUFFIX,gemini.google.com,🤖 AI
+  - DOMAIN-SUFFIX,gemini.google,🤖 AI
+  - DOMAIN-SUFFIX,bard.google.com,🤖 AI
+  - DOMAIN-SUFFIX,aistudio.google.com,🤖 AI
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com,🤖 AI
+  - DOMAIN-SUFFIX,alkalimina-pa.googleapis.com,🤖 AI
   - DOMAIN-SUFFIX,proactive.google.com,🤖 AI
-  
+  - DOMAIN-SUFFIX,notebooklm.google,🤖 AI
+  - DOMAIN-SUFFIX,notebooklm.google.com,🤖 AI
+  - DOMAIN-KEYWORD,gemini,🤖 AI
   
   # --- Microsoft Copilot ---
   - DOMAIN-SUFFIX,bing.com,🤖 AI
