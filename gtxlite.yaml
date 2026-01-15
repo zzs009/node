@@ -176,7 +176,7 @@ rules:
   - DOMAIN-KEYWORD,claude,🤖 AI
   
   # --- Google Gemini (重要) ---
-  - DOMAIN-SUFFIX,accounts.google.com,🤖 AI
+  - DOMAIN-SUFFIX,google.com,🤖 AI
   - DOMAIN-SUFFIX,bard.google.com,🤖 AI
   - DOMAIN-SUFFIX,gemini.google.com,🤖 AI
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com,🤖 AI
