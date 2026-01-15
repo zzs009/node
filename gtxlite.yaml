@@ -223,6 +223,20 @@ rules:
   - DOMAIN-SUFFIX,youtubekids.com,📹 Youtube
   - DOMAIN-SUFFIX,yt.be,📹 Youtube
   - DOMAIN-SUFFIX,ytimg.com,📹 Youtube
+  
+  - DOMAIN,ai.google.dev,📹 Youtube
+  - DOMAIN,alkalimakersuite-pa.clients6.google.com,📹 Youtube
+  - DOMAIN,makersuite.google.com,📹 Youtube
+  - DOMAIN-SUFFIX,bard.google.com,📹 Youtube
+  - DOMAIN-SUFFIX,deepmind.com,📹 Youtube
+  - DOMAIN-SUFFIX,deepmind.google,📹 Youtube
+  - DOMAIN-SUFFIX,gemini.google.com,📹 Youtube
+  - DOMAIN-SUFFIX,generativeai.google,📹 Youtube
+  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,📹 Youtube
+  - DOMAIN-SUFFIX,apis.google.com,📹 Youtube
+  - DOMAIN-KEYWORD,colab,📹 Youtube
+  - DOMAIN-KEYWORD,developerprofiles,📹 Youtube
+  - DOMAIN-KEYWORD,generativelanguage,📹 Youtube
   # 常见的直连（防止DNS泄露后的测速损耗）
   - GEOSITE,CN,DIRECT
   - GEOIP,CN,DIRECT,no-resolve
