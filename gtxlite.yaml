@@ -125,6 +125,8 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🚀 节点选择
+      - ♻️ 非港智选
+      - 🌐 非港手动
       - 🌐 全部手动
       - DIRECT
             
@@ -162,68 +164,56 @@ proxy-groups:
 
 # 4. 路由规则
 rules:
-  - DOMAIN-KEYWORD,google,🤖 ‍AI
-  - DOMAIN-KEYWORD,anthropic,🤖 ‍AI
-  - DOMAIN-KEYWORD,claude,🤖 ‍AI
-  - DOMAIN-KEYWORD,openai,🤖 ‍AI
-  - DOMAIN,ai.google.dev,🤖 ‍AI
-  - DOMAIN,aistudio.google.com,🤖 ‍AI
-  - DOMAIN,api.githubcopilot.com,🤖 ‍AI
-  - DOMAIN,api.groq.com,🤖 ‍AI
-  - DOMAIN,api.together.xyz,🤖 ‍AI
-  - DOMAIN,bard.google.com,🤖 ‍AI
-  - DOMAIN,console.groq.com,🤖 ‍AI
-  - DOMAIN,copilot-proxy.githubusercontent.com,🤖 ‍AI
-  - DOMAIN,gemini.google.com,🤖 ‍AI
-  - DOMAIN,generativelanguage.googleapis.com,🤖 ‍AI
-  - DOMAIN,notebooklm.google.com,🤖 ‍AI
-  - DOMAIN,sydney.bing.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,ai.azure.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,anthropic.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,auth0.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,bard.google.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,chatgpt.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,claude.ai,🤖 ‍AI
-  - DOMAIN-SUFFIX,claude.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,claudeusercontent.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,copilot.cloud.microsoft,🤖 ‍AI
-  - DOMAIN-SUFFIX,copilot.microsoft.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,cursor.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,cursor.sh,🤖 ‍AI
-  - DOMAIN-SUFFIX,events.statsigapi.net,🤖 ‍AI
-  - DOMAIN-SUFFIX,featuregates.org,🤖 ‍AI
-  - DOMAIN-SUFFIX,gemini.google.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,grazie.ai,🤖 ‍AI
-  - DOMAIN-SUFFIX,grazie.aws.intellij.net,🤖 ‍AI
-  - DOMAIN-SUFFIX,identrust.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,intercom.io,🤖 ‍AI
-  - DOMAIN-SUFFIX,intercomcdn.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,jetbrains.ai,🤖 ‍AI
-  - DOMAIN-SUFFIX,makersuite.google.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,meta.ai,🤖 ‍AI
-  - DOMAIN-SUFFIX,mistral.ai,🤖 ‍AI
-  - DOMAIN-SUFFIX,oaistatic.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,oaiusercontent.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,openai.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🤖 ‍AI
-  - DOMAIN-SUFFIX,perplexity.ai,🤖 ‍AI
-  - DOMAIN-SUFFIX,sora.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,x.ai,🤖 ‍AI
-  
-  - DOMAIN,ai.google.dev,🤖 ‍AI
-  - DOMAIN,alkalimakersuite-pa.clients6.google.com,🤖 ‍AI
-  - DOMAIN,makersuite.google.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,bard.google.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,deepmind.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,deepmind.google,🤖 ‍AI
-  - DOMAIN-SUFFIX,gemini.google.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,generativeai.google,🤖 ‍AI
-  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,🤖 ‍AI
-  - DOMAIN-SUFFIX,apis.google.com,🤖 ‍AI
-  - DOMAIN-KEYWORD,colab,🤖 ‍AI
-  - DOMAIN-KEYWORD,developerprofiles,🤖 ‍AI
-  - DOMAIN-KEYWORD,generativelanguage,🤖 ‍AI 
+# === 1. Google Gemini & AI (含移动端 App 补丁) ===
+  - DOMAIN,alkalimina-pa.googleapis.com,🤖 AI
+  - DOMAIN,library-pa.googleapis.com,🤖 AI
+  - DOMAIN,embeddedpostman-pa.googleapis.com,🤖 AI
+  - DOMAIN,flytower-pa.googleapis.com,🤖 AI
+  - DOMAIN-SUFFIX,assistant-pa.googleapis.com,🤖 AI
+  - DOMAIN-SUFFIX,clients6.google.com,🤖 AI
+  - DOMAIN-SUFFIX,gemini.google,🤖 AI
+  - DOMAIN-SUFFIX,gemini.google.com,🤖 AI
+  - DOMAIN-SUFFIX,bard.google.com,🤖 AI
+  - DOMAIN-SUFFIX,proactive.google.com,🤖 AI
+  - DOMAIN-SUFFIX,aistudio.google.com,🤖 AI
+  - DOMAIN-SUFFIX,notebooklm.google,🤖 AI
+  - DOMAIN-SUFFIX,generativelanguage.googleapis.com,🤖 AI
+  - DOMAIN-KEYWORD,gemini,🤖 AI
+
+  # === 2. OpenAI & ChatGPT ===
+  - DOMAIN-SUFFIX,chatgpt.com,🤖 AI
+  - DOMAIN-SUFFIX,openai.com,🤖 AI
+  - DOMAIN-SUFFIX,oaistatic.com,🤖 AI
+  - DOMAIN-SUFFIX,oaiusercontent.com,🤖 AI
+  - DOMAIN-SUFFIX,chatgpt.live.com,🤖 AI
+  - DOMAIN-KEYWORD,openai,🤖 AI
+
+  # === 3. Anthropic & Claude ===
+  - DOMAIN-SUFFIX,claude.ai,🤖 AI
+  - DOMAIN-SUFFIX,claude.com,🤖 AI
+  - DOMAIN-SUFFIX,anthropic.com,🤖 AI
+  - DOMAIN-SUFFIX,claudeusercontent.com,🤖 AI
+  - DOMAIN-KEYWORD,claude,🤖 AI
+
+  # === 4. Microsoft Copilot & Bing AI ===
+  - DOMAIN,sydney.bing.com,🤖 AI
+  - DOMAIN-SUFFIX,copilot.microsoft.com,🤖 AI
+  - DOMAIN-SUFFIX,bing.com,🤖 AI
+
+  # === 5. Perplexity AI (搜索 AI) ===
+  - DOMAIN-SUFFIX,perplexity.ai,🤖 AI
+
+  # === 6. 其他主流 AI (Meta, Mistral, Grok, DeepSeek) ===
+  - DOMAIN-SUFFIX,meta.ai,🤖 AI             # Meta Llama
+  - DOMAIN-SUFFIX,mistral.ai,🤖 AI          # Mistral
+  - DOMAIN-SUFFIX,grok.com,🤖 AI             # xAI Grok
+  - DOMAIN-SUFFIX,deepseek.com,🤖 AI         # DeepSeek (如果需要海外节点访问)
+  - DOMAIN-SUFFIX,x.ai,🤖 AI
+
+  # === 7. 开发者及 API 补充 ===
+  - DOMAIN-SUFFIX,cursor.com,🤖 AI          # Cursor 编译器
+  - DOMAIN-SUFFIX,groq.com,🤖 AI            # Groq 极速推理
+  - DOMAIN-SUFFIX,together.xyz,🤖 AI
   
   - DOMAIN-KEYWORD,youtube,📹 Youtube
   - DOMAIN,youtubei.googleapis.com,📹 Youtube
