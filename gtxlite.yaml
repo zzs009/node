@@ -162,6 +162,7 @@ proxy-groups:
 
 # 4. 路由规则
 rules:
+  - DOMAIN-KEYWORD,google,🤖 ‍AI
   - DOMAIN-KEYWORD,anthropic,🤖 ‍AI
   - DOMAIN-KEYWORD,claude,🤖 ‍AI
   - DOMAIN-KEYWORD,openai,🤖 ‍AI
