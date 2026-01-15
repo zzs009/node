@@ -186,6 +186,7 @@ rules:
   - DOMAIN-SUFFIX,notebooklm.google,🤖 AI
   - DOMAIN-SUFFIX,notebooklm.google.com,🤖 AI
   - DOMAIN-KEYWORD,gemini,🤖 AI
+  - DOMAIN-KEYWORD,googleads,🤖 AI
   
   # --- Microsoft Copilot ---
   - DOMAIN-SUFFIX,bing.com,🤖 AI
