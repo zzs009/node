@@ -1,0 +1,211 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+# 关键：开启 IPv6 支持，否则无法连接 IPv6 节点
+ipv6: true
+unified-delay: true
+global-client-fingerprint: chrome
+
+# 杜绝 DNS 泄露方案（IPv6 兼容版）
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  # 关键：DNS 解析也需要支持 IPv6
+  ipv6: true
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - 'dns.msftncsi.com'
+    - 'www.msftncsi.com'
+    - 'www.msftconnecttest.com'
+    - 'msftconnecttest.com'
+  
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  
+  # 分流解析：确保国内走国内 DNS，国外走加密 DoH
+  nameserver-policy:
+    "geosite:cn": [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
+    "geosite:geolocation-!cn": [https://1.1.1.1/dns-query, https://8.8.8.8/dns-query]
+
+  # 专门用于解析你的 IPv6 节点域名
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - 223.5.5.5
+  
+  fallback: []
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+
+sniffing:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+
+proxies:
+  # === Hy2 ipv4 节点 (6个) ===
+  - {name: "[Hy2][🇭🇰] 香港 01", server: hy5.hy2yydsapi.top, port: 8443, type: hysteria2, password: 9c23940e-efd8-4763-bfb5-54739b50893d, auth: 9c23940e-efd8-4763-bfb5-54739b50893d, sni: hy5.hy2yydsapi.top, up: 50, down: 100, skip-cert-verify: false}
+  - {name: "[Hy2][🇭🇰] 香港 02", server: hy5.hy2yydsapi.top, port: 8089, type: hysteria2, password: 9c23940e-efd8-4763-bfb5-54739b50893d, auth: 9c23940e-efd8-4763-bfb5-54739b50893d, sni: hy5.hy2yydsapi.top, up: 50, down: 100, skip-cert-verify: false}
+  - {name: "[Hy2][🇭🇰] 香港 03", server: hy12.hy2yydsapi.top, port: 8089, type: hysteria2, password: 9c23940e-efd8-4763-bfb5-54739b50893d, auth: 9c23940e-efd8-4763-bfb5-54739b50893d, sni: hy12.hy2yydsapi.top, up: 50, down: 100, skip-cert-verify: false}
+  - {name: "[Hy2][🇬🇧] 英国 01", server: hy7.hy2yydsapi.top, port: 8443, type: hysteria2, password: 9c23940e-efd8-4763-bfb5-54739b50893d, auth: 9c23940e-efd8-4763-bfb5-54739b50893d, sni: hy7.hy2yydsapi.top, up: 50, down: 100, skip-cert-verify: false}
+  - {name: "[Hy2][🇬🇧] 英国 02", server: hy7.hy2yydsapi.top, port: 680, type: hysteria2, password: 9c23940e-efd8-4763-bfb5-54739b50893d, auth: 9c23940e-efd8-4763-bfb5-54739b50893d, sni: hy7.hy2yydsapi.top, up: 50, down: 100, skip-cert-verify: false}
+  - {name: "[Hy2][🇪🇸] 西班牙 01", server: hy8.hy2yydsapi.top, port: 8443, type: hysteria2, password: 9c23940e-efd8-4763-bfb5-54739b50893d, auth: 9c23940e-efd8-4763-bfb5-54739b50893d, sni: hy8.hy2yydsapi.top, up: 50, down: 100, skip-cert-verify: false}
+
+  # === SS ipv6 节点 (5个) ===
+  - {name: "[06] 香港S1|1x", server: v6hks1.lajichang.xyz, port: 25555, type: ss, cipher: aes-128-gcm, password: f4ab759f-c6ec-47cd-8eb0-679b4776c276, udp: true}
+  - {name: "[06] 香港S5|1x", server: v6hks5.lajichang.xyz, port: 25555, type: ss, cipher: aes-128-gcm, password: f4ab759f-c6ec-47cd-8eb0-679b4776c276, udp: true}
+  - {name: "[06] 日本S2|1x", server: v6jps2.lajichang.xyz, port: 25555, type: ss, cipher: aes-128-gcm, password: f4ab759f-c6ec-47cd-8eb0-679b4776c276, udp: true}
+  - {name: "[06] 新加坡S1|1x", server: v6sgs1.lajichang.xyz, port: 25555, type: ss, cipher: aes-128-gcm, password: f4ab759f-c6ec-47cd-8eb0-679b4776c276, udp: true}
+  - {name: "[06] 新加坡S2|1x", server: v6sgs2.lajichang.xyz, port: 25555, type: ss, cipher: aes-128-gcm, password: f4ab759f-c6ec-47cd-8eb0-679b4776c276, udp: true}
+
+  # === VMess ipv6 香港节点 (10个) ===
+  - {name: "[06] 香港1|1x|移动", server: 2400:c620:2e:551f::1, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 香港3|1x", server: 2a0f:7803:fb31:a4::a, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 香港5|1x|移动", server: 2400:c620:28:28bc::1, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 香港19|1x|移动", server: 2400:c620:28:abb3::1, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 香港21|1x|移动", server: 2a0f:7803:fb40:23::a, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 香港22|1x|移动", server: 2400:c620:29:13::a, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 香港23|1x|移动", server: 2400:c620:29:7c::a, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 香港24|1x|移动", server: 2400:c620:2b:48::a, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 香港25|1x|移动", server: 2400:c620:2b:d9::a, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+
+  # === VMess ipv6 日本节点 (2个) ===
+  - {name: "[06] 日本6|1xw", server: 2a12:a300:3400::8f6a:163, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 日本7|1xw", server: 2a12:a300:500::2925:1fc2, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+
+  # === VMess ipv6 台湾节点 (3个) ===
+  - {name: "[06] 台湾1|1x", server: 2001:b030:a42d:5d01::1043, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 台湾4|1x", server: 2406:8dc0:600a::13, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 台湾5|1xn", server: 2406:8dc0:6004:8bbb:5c76:6773:58d8:6205, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+
+  # === VMess ipv6 新加坡节点 (5个) ===
+  - {name: "[06] 新加坡1|1x", server: 2a0e:97c0:7d4:ff05::a, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 新加坡3|1x", server: 2a02:6ea0:d14a::cdf0:54bf, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 新加坡8|1x", server: 2605:e440:16::281, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 新加坡9|1x", server: 2605:e440:16::346, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+
+  # === VMess ipv6 韩国节点 (4个) ===
+  - {name: "[06] 韩国1|1x", server: 2603:c024:b:ed11:ca30:a4cf:af3a:d423, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 韩国2|1x", server: 2603:c024:b:ed11:1a52:82c9:e0fb:ee1d, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 韩国3|1x", server: 2603:c024:b:ed11:aaa9:2a92:768c:55a2, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+  - {name: "[06] 韩国4|1x", server: 2603:c024:b:ed11:bbba:dec7:f562:3ead, port: 24444, type: vmess, uuid: f4ab759f-c6ec-47cd-8eb0-679b4776c276, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5e60be5f/}, udp: true}
+
+  # === Vless ipv4 (4个) ===
+  - {name: 悉尼高速, server: 192.9.164.54, port: 443, type: vless, uuid: b527363c-efb8-4a3f-9209-cdeb18349afd, tls: true, flow: xtls-rprx-vision, skip-cert-verify: false, reality-opts: {public-key: 9oOtS_WWQMj6h4L72o1Lbu9ze_lmW_2PQy4diKpBjQI, short-id: "ba9c05e6cce34e2e" }, servername: musicstatus.tv.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 法国, server: 69.84.182.13, port: 443, type: vless, uuid: b527363c-efb8-4a3f-9209-cdeb18349afd, tls: true, skip-cert-verify: false, servername: fr-1-fr-1.aiopen.sbs, client-fingerprint: chrome, network: ws, ws-opts: {path: /gsjc/fr1, headers: {Host: fr-1-fr-1.aiopen.sbs}}, udp: true}
+  - {name: 美国凤凰城, server: 132.226.147.10, port: 443, type: vless, uuid: b527363c-efb8-4a3f-9209-cdeb18349afd, tls: true, flow: xtls-rprx-vision, skip-cert-verify: false, reality-opts: {public-key: OEZ3C-1OCSYBikqcWudtPP3PpQq2RAI7rFPxWoTCDSc, short-id: "bffe9292" }, servername: musicstatus.tv.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 美国阿什本, server: 129.158.41.239, port: 443, type: vless, uuid: b527363c-efb8-4a3f-9209-cdeb18349afd, tls: true, flow: xtls-rprx-vision, skip-cert-verify: false, reality-opts: {public-key: Um47-P2c42os7mr1X4Hxw0290YA1FXwyG96p854qol0, short-id: "8c38a563b7a004d8" }, servername: musicstatus.tv.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+
+proxy-groups:
+ 
+  - name: 🌐 全部节点1
+    type: select
+    include-all: true
+  
+  - name: 🌐 全部节点2
+    type: select
+    include-all: true
+
+  - name: ♻️ 全部智选
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    include-all: true
+    
+  - name: 🌐 AI节点1
+    type: select
+    filter: "(?i)^(?!.*香港|HK|Hong Kong).*$"
+    include-all: true
+    
+  - name: 🌐 AI节点2
+    type: select
+    filter: "(?i)^(?!.*香港|HK|Hong Kong).*$"
+    include-all: true  
+
+  - name: ♻️ AI智选
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    filter: "(?i)^(?!.*香港|HK|Hong Kong).*$"
+    include-all: true
+
+  - name: 📹 Youtube
+    type: fallback          # 或 url-test（推荐）
+    proxies:
+    - 🌐 全部节点1
+    - 🌐 全部节点2
+    - ♻️ 全部智选   # 备选
+    url: https://www.google.com/generate_204
+    interval: 300
+    timeout: 3
+
+  - name: 🤖 AI
+    type: fallback          # 或 url-test（推荐）
+    proxies:
+    - 🌐 AI节点1
+    - 🌐 AI节点2
+    - ♻️ AI智选   # 备选
+    url: https://www.google.com/generate_204
+    interval: 300
+    timeout: 3
+ 
+  - name: 🐟 漏网之鱼
+    type: fallback          # 或 url-test（推荐）
+    proxies:
+    - 🌐 全部节点1
+    - 🌐 全部节点2
+    - ♻️ 全部智选   # 备选
+    url: https://www.google.com/generate_204
+    interval: 300
+    timeout: 3
+# 4. 路由规则
+rules:
+  - DOMAIN,generativelanguage.googleapis.com,🤖 AI
+  - DOMAIN-SUFFIX,googleapis.com,🤖 AI
+  - DOMAIN-SUFFIX,gemini.google.com,🤖 AI
+  - DOMAIN-SUFFIX,gemini.googleusercontent.com,🤖 AI
+  - DOMAIN-SUFFIX,gemini-bard.com,🤖 AI
+  - DOMAIN-SUFFIX,aistudio.google.com,🤖 AI
+  - DOMAIN-SUFFIX,claude.ai,🤖 AI
+  - DOMAIN-SUFFIX,anthropic.com,🤖 AI
+  - DOMAIN-SUFFIX,chatgpt.com,🤖 AI
+  - DOMAIN-SUFFIX,openai.com,🤖 AI
+  - DOMAIN,oaiusercontent.com,🤖 AI
+  - DOMAIN,chat.openai.com,🤖 AI
+  - DOMAIN-SUFFIX,poe.com,🤖 AI
+  - DOMAIN-SUFFIX,perplexity.ai,🤖 AI
+  - DOMAIN-SUFFIX,grok.com,🤖 AI
+  - DOMAIN-SUFFIX,x.ai,🤖 AI
+  - DOMAIN-SUFFIX,grok.x.com,🤖 AI
+  - DOMAIN-SUFFIX,deepmind.google,🤖 AI
+  - DOMAIN-SUFFIX,meta.ai,🤖 AI
+  
+  - DOMAIN-KEYWORD,youtube,📹 Youtube
+  - DOMAIN,youtubei.googleapis.com,📹 Youtube
+  - DOMAIN,yt3.ggpht.com,📹 Youtube
+  - DOMAIN-SUFFIX,googlevideo.com,📹 Youtube
+  - DOMAIN-SUFFIX,gvt2.com,📹 Youtube
+  - DOMAIN-SUFFIX,withyoutube.com,📹 Youtube
+  - DOMAIN-SUFFIX,youtu.be,📹 Youtube
+  - DOMAIN-SUFFIX,youtube-nocookie.com,📹 Youtube
+  - DOMAIN-SUFFIX,youtube.com,📹 Youtube
+  - DOMAIN-SUFFIX,youtubeeducation.com,📹 Youtube
+  - DOMAIN-SUFFIX,youtubegaming.com,📹 Youtube
+  - DOMAIN-SUFFIX,youtubekids.com,📹 Youtube
+  - DOMAIN-SUFFIX,yt.be,📹 Youtube
+  - DOMAIN-SUFFIX,ytimg.com,📹 Youtube
+  # 常见的直连（防止DNS泄露后的测速损耗）
+  - GEOSITE,CN,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
+  # 最终兜底
+  - MATCH,🐟 漏网之鱼
