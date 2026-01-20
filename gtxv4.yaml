@@ -62,57 +62,27 @@ proxy-groups:
   - name: 📹 Youtube
     type: select
     proxies:
-      - ♻️ 自动选择
-      - 🌐 全部手动
-      - 🚀 节点选择
+      - 悉尼高速
+      - 法国
+      - 美国凤凰城
+      - 美国阿什本
 
   - name: 🤖 AI
     type: select
     proxies:
-      - ♻️ 非港智选
-      - 🌐 非港手动
-      - 🚀 节点选择
+      - 悉尼高速
+      - 法国
+      - 美国凤凰城
+      - 美国阿什本
 
   - name: 🐟 漏网之鱼
     type: select
     proxies:
-      - ♻️ 自动选择
-      - 🚀 节点选择
-      - 🌐 全部手动
-      - DIRECT
+      - 悉尼高速
+      - 法国
+      - 美国凤凰城
+      - 美国阿什本
             
-  - name: 🌐 全部手动
-    type: select
-    include-all: true
-    
-  - name: 🌐 非港手动
-    type: select
-    filter: "(?i)^(?!.*香港|HK|Hong Kong).*$"
-    include-all: true
-
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    include-all: true
-
-  - name: ♻️ 非港智选
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    filter: "(?i)^(?!.*香港|HK|Hong Kong).*$"
-    include-all: true
-
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - ♻️ 非港智选
-      - 🌐 全部手动
-      - DIRECT
-
 # 4. 路由规则
 rules:
   # AI 规则
@@ -158,3 +128,4 @@ rules:
   - GEOIP,CN,DIRECT,no-resolve
   # 最终兜底
   - MATCH,🐟 漏网之鱼
+
