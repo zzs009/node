@@ -164,6 +164,7 @@ proxy-groups:
 # 4. 路由规则
 rules:
   - DOMAIN,generativelanguage.googleapis.com,🤖 AI
+  - DOMAIN-KEYWORD,google,🤖 AI
   - DOMAIN-SUFFIX,googleapis.com,🤖 AI
   - DOMAIN-SUFFIX,gemini.google.com,🤖 AI
   - DOMAIN-SUFFIX,gemini.googleusercontent.com,🤖 AI
