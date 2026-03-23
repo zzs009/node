@@ -11,7 +11,6 @@ dns:
   respect-rules: true
   use-system-hosts: false
   cache-algorithm: "arc"
-  enhanced-mode: "fake-ip"
   fake-ip-range: "198.18.0.1/16"
   fake-ip-filter:
     - "+.lan"
@@ -39,7 +38,22 @@ dns:
       - "https://223.5.5.5/dns-query"
       - "https://doh.pub/dns-query"
 
-proxies:            
+proxies:
+- name: vless-reality-vision-C20260319147213               
+  type: vless
+  server: 68.64.182.91                           
+  port: 46613                                
+  uuid: afde17bc-0f1a-4905-ba8b-591df45ad69d   
+  network: tcp
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: apple.com                 
+  reality-opts: 
+    public-key: EZtceFsZDl0Jv1Z5OHIkLArtaBLeHl1_jgOrjdZ6fQQ    
+    short-id: 3fbde9c5                      
+  client-fingerprint: chrome                  
+
 - name: vmess-ws-C20260319147213                         
   type: vmess
   server: 68.64.182.91                        
@@ -57,7 +71,7 @@ proxies:
       Host: www.bing.com                     
 
 - name: tuic5-C20260319147213                            
-  server: 68.64.182.91                      
+  server: sb.zzs.us.ci                      
   port: 26261                                    
   type: tuic
   uuid: afde17bc-0f1a-4905-ba8b-591df45ad69d       
@@ -67,8 +81,8 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-  sni: www.bing.com                                
-  skip-cert-verify: true
+  sni: sb.zzs.us.ci                                
+  skip-cert-verify: false
 proxy-groups:
 - name: 负载均衡
   type: load-balance
@@ -76,6 +90,7 @@ proxy-groups:
   interval: 300
   strategy: round-robin
   proxies:
+    - vless-reality-vision-C20260319147213                              
     - vmess-ws-C20260319147213
     - tuic5-C20260319147213
 
@@ -84,7 +99,8 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
-  proxies:                         
+  proxies:
+    - vless-reality-vision-C20260319147213                              
     - vmess-ws-C20260319147213
     - tuic5-C20260319147213
     
@@ -93,7 +109,8 @@ proxy-groups:
   proxies:
     - 负载均衡                                         
     - 自动选择
-    - DIRECT                        
+    - DIRECT
+    - vless-reality-vision-C20260319147213                              
     - vmess-ws-C20260319147213
     - tuic5-C20260319147213
 rules:
